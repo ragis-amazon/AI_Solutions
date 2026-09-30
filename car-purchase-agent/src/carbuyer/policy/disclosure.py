@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import re
 
 from ..models import Buyer
@@ -14,13 +15,13 @@ def slug(buyer: Buyer) -> str:
     return re.sub(r"[^a-z0-9]+", "", buyer.first_name.lower()) or "buyer"
 
 
-def from_header(buyer: Buyer, campaign_id: str, domain: str = DEFAULT_BRAND_DOMAIN) -> str:
-    a = buyer.assistant_name
-    return f"{a} (AI assistant for {buyer.first_name}) <{a.lower()}.{slug(buyer)}-{campaign_id[-6:]}@{domain}>"
-
-
 def reply_address(buyer: Buyer, campaign_id: str, domain: str = DEFAULT_BRAND_DOMAIN) -> str:
-    return f"{buyer.assistant_name.lower()}.{slug(buyer)}-{campaign_id[-6:]}@{domain}"
+    tag = hashlib.sha1(campaign_id.encode()).hexdigest()[:6]
+    return f"{buyer.assistant_name.lower()}.{slug(buyer)}-{tag}@{domain}"
+
+
+def from_header(buyer: Buyer, campaign_id: str, domain: str = DEFAULT_BRAND_DOMAIN) -> str:
+    return f"{buyer.assistant_name} (AI assistant for {buyer.first_name}) <{reply_address(buyer, campaign_id, domain)}>"
 
 
 def intro_line(buyer: Buyer) -> str:

@@ -102,7 +102,7 @@ class PolicyEngine:
         v += self._operational(ctx)
         acceptance_ok = self._acceptance_ok(text, ctx, v)
         if not acceptance_ok:
-            v += self._commitment(text)
+            v += self._commitment(text, ctx.buyer.first_name)
         v += self._pii(text, ctx, allow_contact=acceptance_ok and ctx.contact_sharing_approved)
         v += self._budget(text, ctx)
         v += self._fabrication(text, ctx)
@@ -142,10 +142,11 @@ class PolicyEngine:
             return False
         return True
 
-    def _commitment(self, text: str) -> list[PolicyViolation]:
+    def _commitment(self, text: str, first_name: str) -> list[PolicyViolation]:
+        pats = COMMITMENT_PATTERNS + [p.replace(r"\b(we|i|he|she|they", rf"\b({re.escape(first_name)}|we|i|he|she|they", 1) for p in COMMITMENT_PATTERNS[:1]]
         return [
             PolicyViolation(rule="commitment", detail=m.group(0))
-            for p in COMMITMENT_PATTERNS
+            for p in pats
             for m in [re.search(p, text, re.I)]
             if m
         ]

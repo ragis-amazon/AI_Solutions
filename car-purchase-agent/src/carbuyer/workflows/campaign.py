@@ -856,7 +856,7 @@ class CampaignEngine:
             price_model=self.pm,
             threads=self.threads,
             quotes=self.quotes,
-            messages=sorted(self.messages, key=lambda m: (m.ts, m.id)),
+            messages=sorted(self.messages, key=lambda m: (m.ts, m.direction == "outbound", m.id)),
             calls=self.calls,
             rounds=self.rounds,
             shortlist=self.shortlist,
