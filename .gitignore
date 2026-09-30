@@ -5,3 +5,4 @@ __pycache__/
 car-purchase-agent/data/
 *.sqlite
 *.sqlite-*
+*.egg-info/
