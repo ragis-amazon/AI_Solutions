@@ -87,6 +87,31 @@ def cmd_eval(a) -> int:
     return 0
 
 
+def cmd_eval_lanes(a) -> int:
+    from .evals.lanes import configured_lanes, key_status, missing_provider_keys, render_provider_report, run_lanes
+
+    print("Provider keys: " + ", ".join(f"{name} {state}" for name, state in key_status().items()))
+    specs = configured_lanes()
+    if not specs:
+        print("No free-provider lane has its key set.")
+        return 1
+    for spec in specs:
+        print(f"lane {spec.label}: {spec.model} ({spec.note.split('.')[0]})")
+    if a.list:
+        return 0
+    def on_update(results: list) -> None:
+        if a.report:
+            Path(a.report).write_text(render_provider_report(results, missing=missing_provider_keys()))
+
+    results = run_lanes(a.suite, a.progress_dir, on_update=on_update)
+    md = render_provider_report(results, missing=missing_provider_keys())
+    print(md)
+    if a.report:
+        Path(a.report).write_text(md)
+        print(f"wrote {a.report}")
+    return 0
+
+
 def cmd_intake(a) -> int:
     from .agents.intake import IntakeAgent
 
@@ -145,6 +170,13 @@ def main(argv: list[str] | None = None) -> int:
     e.add_argument("--strict", action="store_true", help="with --gate, also fail on any soft target")
     e.add_argument("--no-store", action="store_true")
     e.set_defaults(fn=cmd_eval)
+
+    lanes = sub.add_parser("eval-lanes", help="run practice campaigns on every configured free provider until its quota is exhausted")
+    lanes.add_argument("--suite", default=str(ROOT / "scenarios" / "suite"))
+    lanes.add_argument("--report", help="write the per-provider markdown report here")
+    lanes.add_argument("--progress-dir", default=str(ROOT / "data" / "lanes"))
+    lanes.add_argument("--list", action="store_true", help="print configured lanes and exit without calling a provider")
+    lanes.set_defaults(fn=cmd_eval_lanes)
 
     i = sub.add_parser("intake", help="interactive intake interview -> PurchaseSpec")
     i.set_defaults(fn=cmd_intake)

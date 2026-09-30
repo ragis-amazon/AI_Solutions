@@ -15,7 +15,7 @@ dependencies = [
 
 [project.optional-dependencies]
 durable = ["dbos>=2"]
-llm = ["pydantic-ai-slim[openai,anthropic,google]>=1"]
+llm = ["pydantic-ai-slim[openai,anthropic,google,groq,mistral]>=1"]
 console = ["streamlit>=1.35", "pandas>=2"]
 dev = ["pytest>=8", "dbos>=2", "pydantic-ai-slim>=1"]
 
