@@ -80,10 +80,12 @@ The default is `CARBUYER_LLM_BACKEND=mock`: deterministic agents, no network. To
 ```bash
 pip install -e ".[llm]"
 export CARBUYER_LLM_BACKEND=pydantic_ai
-export CARBUYER_MODEL_SMALL=openai:gpt-5-mini              # dealer personas, classification, extraction
-export CARBUYER_MODEL_MID=anthropic:claude-sonnet-4-5      # negotiator drafts
-export CARBUYER_MODEL_FRONTIER=anthropic:claude-opus-4-1   # LLM judge
-export OPENAI_API_KEY=... ANTHROPIC_API_KEY=...            # whichever providers you pick (GEMINI_API_KEY for google-gla:...)
+export ANTHROPIC_API_KEY=...                               # defaults below are Anthropic models
+export ANTHROPIC_WORKSPACE_ID=wrkspc_...                   # only for keys not scoped to a workspace
+# Optional overrides (defaults shown); any Pydantic AI "provider:model" string works:
+export CARBUYER_MODEL_SMALL=anthropic:claude-haiku-4-5     # dealer personas, classification, extraction
+export CARBUYER_MODEL_MID=anthropic:claude-sonnet-5-5      # negotiator drafts
+export CARBUYER_MODEL_FRONTIER=anthropic:claude-opus-5-5   # LLM judge
 ```
 
 With a real backend, the negotiator rewords each playbook template, the classifier and quote parser use typed outputs, the judge scores tone and playbook compliance, and simulated dealers speak in their persona voice. Dealer decisions and numbers stay deterministic, so the scenario truth stays exact. Every model output is still checked in code, and any failure falls back to the deterministic path. The real-model path is tested offline with Pydantic AI's `FunctionModel`, including a rewrite that leaks the budget, which is blocked and replaced by the template.

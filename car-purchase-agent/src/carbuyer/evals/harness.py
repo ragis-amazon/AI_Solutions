@@ -44,6 +44,10 @@ def run_suite(
     for s in scenarios:
         for seed in seeds:
             result, sc, _ = run_one(s, seed, llm)
+            if llm.enabled and llm.usage.calls == 0 and llm.usage.errors:
+                raise RuntimeError(
+                    "every model call failed, so results would silently be mock results: " + llm.usage.last_error
+                )
             scores.append(sc)
             if store:
                 store.save_campaign(run_id, result, sc)

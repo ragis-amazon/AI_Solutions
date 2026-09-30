@@ -1,5 +1,6 @@
 """Red-team the guard: bad drafts (scripted or from a model) must never be sent."""
 
+import pytest
 from pydantic_ai.messages import ModelResponse, TextPart, ToolCallPart, UserPromptPart
 from pydantic_ai.models.function import AgentInfo, FunctionModel
 
@@ -79,6 +80,30 @@ def test_model_rewrite_that_is_clean_is_sent(showcase):
     assert any(m.body.startswith("Hope your week") for m in eng.world.outbound_log)
     assert audit(r, eng.world) == []
     assert r.llm["by_role"]["judge"] > 0
+
+
+def test_eval_aborts_when_every_model_call_fails():
+    from carbuyer.evals.harness import run_suite
+
+    from .conftest import SHOWCASE
+
+    llm = LLM("pydantic_ai", models={t: FunctionModel(failing) for t in ("small", "mid", "frontier")})
+    with pytest.raises(RuntimeError, match="provider down"):
+        run_suite([SHOWCASE], [1], llm=llm)
+
+
+def test_anthropic_workspace_header_from_env(monkeypatch):
+    pytest.importorskip("anthropic")
+    from carbuyer.llm import resolve_model
+
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "test-key")
+    monkeypatch.delenv("ANTHROPIC_WORKSPACE_ID", raising=False)
+    assert resolve_model("anthropic:claude-haiku-4-5") == "anthropic:claude-haiku-4-5"
+    monkeypatch.setenv("ANTHROPIC_WORKSPACE_ID", "wrkspc_test")
+    m = resolve_model("anthropic:claude-haiku-4-5")
+    assert m.model_name == "claude-haiku-4-5"
+    assert m.client.default_headers["anthropic-workspace-id"] == "wrkspc_test"
+    assert resolve_model("openai:gpt-5-mini") == "openai:gpt-5-mini"
 
 
 def test_structured_classifier_via_model(showcase):
