@@ -1,0 +1,207 @@
+id: s07-fee-heavy-5
+name: fee-heavy / 5 dealers / v1
+description: Toyota Camry in NY, 5 dealers (fee-heavy, 5-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Toyota
+  model: Camry
+  trims:
+  - XSE
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Silver
+  - Blue
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 37500.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '10001'
+  state: NY
+  radius_mi: 50.0
+market:
+  msrp: 33500.0
+  invoice: 31400.0
+  destination: 1145.0
+  incentives:
+  - name: Customer Cash
+    amount: 500.0
+    finance_conditional: false
+  - name: APR Bonus Cash
+    amount: 750.0
+    finance_conditional: true
+  tax_rate: 0.08875
+  title_reg: 410.0
+  doc_fee_cap: 175.0
+  typical_doc_fee: 175.0
+  supply: normal
+dealers:
+- id: d01
+  name: Bayside Toyota
+  address: 100 Auto Row, New York, NY
+  distance_mi: 14.3
+  phone: 555-0100-1000
+  email: internet.sales@baysidetoyota.example
+  website: https://baysidetoyota.example
+  persona: fee_stuffer
+  floor_price: 31630.0
+  knobs: {}
+  inventory:
+  - vin: WMRDND5VCC4NSEHDU
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: 4VVRBYXFSAD5H62V4
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Toyota
+  address: 117 Auto Row, New York, NY
+  distance_mi: 38.1
+  phone: 555-0101-1001
+  email: internet.sales@goldengatetoyota.example
+  website: https://goldengatetoyota.example
+  persona: adm_gouger
+  floor_price: 30800.0
+  knobs: {}
+  inventory:
+  - vin: 3MNB86M7NHSE0X0AM
+    year: 2026
+    trim: XSE
+    color: Blue
+    options: []
+    msrp: 33500.0
+  - vin: KT1PVGTDRMXS0DH66
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Toyota
+  address: 134 Auto Row, New York, NY
+  distance_mi: 27.5
+  phone: 555-0102-1002
+  email: internet.sales@peninsulatoyota.example
+  website: https://peninsulatoyota.example
+  persona: payment_packer
+  floor_price: 31090.0
+  knobs: {}
+  inventory:
+  - vin: EVNB8U5TY7MJVBRWG
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: 578TD22V4JMJ3F8KH
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Toyota
+  address: 151 Auto Row, New York, NY
+  distance_mi: 5.9
+  phone: 555-0103-1003
+  email: internet.sales@harbortoyota.example
+  website: https://harbortoyota.example
+  persona: fee_stuffer
+  floor_price: 30790.0
+  knobs: {}
+  inventory:
+  - vin: 9N8V18JUSYDLETASH
+    year: 2026
+    trim: XSE
+    color: Blue
+    options: []
+    msrp: 33500.0
+  - vin: PYNW6CAPD0J6DW49X
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Toyota
+  address: 168 Auto Row, New York, NY
+  distance_mi: 20.3
+  phone: 555-0104-1004
+  email: internet.sales@summittoyota.example
+  website: https://summittoyota.example
+  persona: straight_shooter
+  floor_price: 30840.0
+  knobs: {}
+  inventory:
+  - vin: M5YCV5LWYDTT2ALG2
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: BEN79HYBZEP0C82ZR
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- fee-heavy
+- 5-dealers
+intake_answers: {}

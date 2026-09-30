@@ -1,0 +1,476 @@
+id: s12-fee-heavy-15
+name: fee-heavy / 15 dealers / v2
+description: Kia Telluride in NY, 15 dealers (fee-heavy, 15-dealers, opt-out, accept-substitutes, dishonest-final)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Kia
+  model: Telluride
+  trims:
+  - SX
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Black
+  - White
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 52400.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '10001'
+  state: NY
+  radius_mi: 50.0
+market:
+  msrp: 46800.0
+  invoice: 44300.0
+  destination: 1445.0
+  incentives: []
+  tax_rate: 0.08875
+  title_reg: 410.0
+  doc_fee_cap: 175.0
+  typical_doc_fee: 175.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Kia
+  address: 100 Auto Row, New York, NY
+  distance_mi: 38.9
+  phone: 555-0100-1000
+  email: internet.sales@baysidekia.example
+  website: https://baysidekia.example
+  persona: adm_gouger
+  floor_price: 44560.0
+  knobs: {}
+  inventory:
+  - vin: 2PBZT4NK53A26G7R1
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: 70LP1J7VRGMAUE9DR
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Kia
+  address: 117 Auto Row, New York, NY
+  distance_mi: 20.1
+  phone: 555-0101-1001
+  email: internet.sales@goldengatekia.example
+  website: https://goldengatekia.example
+  persona: payment_packer
+  floor_price: 44330.0
+  knobs: {}
+  inventory:
+  - vin: RDM9S9Y92GZK0DMBN
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: SKRDHCTUYA92EG1VX
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Kia
+  address: 134 Auto Row, New York, NY
+  distance_mi: 6.6
+  phone: 555-0102-1002
+  email: internet.sales@peninsulakia.example
+  website: https://peninsulakia.example
+  persona: fee_stuffer
+  floor_price: 44260.0
+  knobs: {}
+  inventory:
+  - vin: 8LWNM9V5R2D5LLZ0J
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: YK7ML475WXZ3PXAAM
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Kia
+  address: 151 Auto Row, New York, NY
+  distance_mi: 36.8
+  phone: 555-0103-1003
+  email: internet.sales@harborkia.example
+  website: https://harborkia.example
+  persona: straight_shooter
+  floor_price: 45280.0
+  knobs:
+    opt_out: true
+  inventory:
+  - vin: YFF9KTU48SW0T8MDT
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: ATJ8DCKLNCT5FTABA
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Kia
+  address: 168 Auto Row, New York, NY
+  distance_mi: 30.4
+  phone: 555-0104-1004
+  email: internet.sales@summitkia.example
+  website: https://summitkia.example
+  persona: bait_and_switch
+  floor_price: 44780.0
+  knobs: {}
+  inventory:
+  - vin: XLB1GMA01Z9PDWR7S
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: TS41D5MTSRD62BKSV
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Kia
+  address: 185 Auto Row, New York, NY
+  distance_mi: 6.4
+  phone: 555-0105-1005
+  email: internet.sales@valleykia.example
+  website: https://valleykia.example
+  persona: fee_stuffer
+  floor_price: 44800.0
+  knobs:
+    honesty: 0.5
+  inventory:
+  - vin: VCXLS426D02GTWELY
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: DCZPCJ83VC1WHMEK3
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Kia
+  address: 202 Auto Row, New York, NY
+  distance_mi: 13.9
+  phone: 555-0106-1006
+  email: internet.sales@lakesidekia.example
+  website: https://lakesidekia.example
+  persona: adm_gouger
+  floor_price: 44300.0
+  knobs: {}
+  inventory:
+  - vin: NLDAS25ZWF68VN8VN
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: FTAJGACGUPNDELMZ7
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Kia
+  address: 219 Auto Row, New York, NY
+  distance_mi: 29.2
+  phone: 555-0107-1007
+  email: internet.sales@metrokia.example
+  website: https://metrokia.example
+  persona: payment_packer
+  floor_price: 44350.0
+  knobs: {}
+  inventory:
+  - vin: ZY4LCBLKW2FNX1GTS
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: T3456HZ7UYN3G2JMN
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Kia
+  address: 236 Auto Row, New York, NY
+  distance_mi: 25.1
+  phone: 555-0108-1008
+  email: internet.sales@ridgekia.example
+  website: https://ridgekia.example
+  persona: fee_stuffer
+  floor_price: 44670.0
+  knobs: {}
+  inventory:
+  - vin: FLNC1MX6JN5TCV3D2
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: H84BVFN5TML014E6G
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Kia
+  address: 253 Auto Row, New York, NY
+  distance_mi: 38.4
+  phone: 555-0109-1009
+  email: internet.sales@coastkia.example
+  website: https://coastkia.example
+  persona: straight_shooter
+  floor_price: 44600.0
+  knobs: {}
+  inventory:
+  - vin: FXAXWWVKH7KAWKPPN
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: 5TEVTP9XU505W0N3F
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Pioneer Kia
+  address: 270 Auto Row, New York, NY
+  distance_mi: 18.4
+  phone: 555-0110-1010
+  email: internet.sales@pioneerkia.example
+  website: https://pioneerkia.example
+  persona: bait_and_switch
+  floor_price: 45390.0
+  knobs: {}
+  inventory:
+  - vin: NKT7VF5PBR6A7SJXG
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: FD0MGWD78VZHA3GMK
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d12
+  name: Redwood Kia
+  address: 287 Auto Row, New York, NY
+  distance_mi: 34.4
+  phone: 555-0111-1011
+  email: internet.sales@redwoodkia.example
+  website: https://redwoodkia.example
+  persona: fee_stuffer
+  floor_price: 44730.0
+  knobs: {}
+  inventory:
+  - vin: MCJ5YWW3KY1WXFS1H
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: BUDFR4SEHLSVBDBSK
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d13
+  name: Crossroads Kia
+  address: 304 Auto Row, New York, NY
+  distance_mi: 37.0
+  phone: 555-0112-1012
+  email: internet.sales@crossroadskia.example
+  website: https://crossroadskia.example
+  persona: adm_gouger
+  floor_price: 44680.0
+  knobs: {}
+  inventory:
+  - vin: 12WE6W8W43LZ59Y79
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: WZSWVVYGB2E0BK17X
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d14
+  name: Mission Kia
+  address: 321 Auto Row, New York, NY
+  distance_mi: 16.0
+  phone: 555-0113-1013
+  email: internet.sales@missionkia.example
+  website: https://missionkia.example
+  persona: payment_packer
+  floor_price: 44920.0
+  knobs: {}
+  inventory:
+  - vin: 5W740AT69YAYH3CKC
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: 86W25ZX6VRT3GGFM9
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d15
+  name: Northgate Kia
+  address: 338 Auto Row, New York, NY
+  distance_mi: 19.1
+  phone: 555-0114-1014
+  email: internet.sales@northgatekia.example
+  website: https://northgatekia.example
+  persona: fee_stuffer
+  floor_price: 44630.0
+  knobs: {}
+  inventory:
+  - vin: X1UGA11NN6AFY2YPW
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: BJPVCBVH5WFR7PRBY
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: accept_same_trim
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- fee-heavy
+- 15-dealers
+- opt-out
+- accept-substitutes
+- dishonest-final
+intake_answers: {}

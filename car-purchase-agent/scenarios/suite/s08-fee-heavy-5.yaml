@@ -1,0 +1,206 @@
+id: s08-fee-heavy-5
+name: fee-heavy / 5 dealers / v2
+description: Toyota RAV4 Hybrid in WA, 5 dealers (fee-heavy, 5-dealers, opt-out, accept-substitutes, dishonest-final)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Toyota
+  model: RAV4 Hybrid
+  trims:
+  - XLE Premium
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - White
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 43600.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '98101'
+  state: WA
+  radius_mi: 50.0
+market:
+  msrp: 38900.0
+  invoice: 36600.0
+  destination: 1395.0
+  incentives: []
+  tax_rate: 0.1025
+  title_reg: 520.0
+  doc_fee_cap: 200.0
+  typical_doc_fee: 200.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Toyota
+  address: 100 Auto Row, Seattle, WA
+  distance_mi: 18.6
+  phone: 555-0100-1000
+  email: internet.sales@baysidetoyota.example
+  website: https://baysidetoyota.example
+  persona: adm_gouger
+  floor_price: 37030.0
+  knobs: {}
+  inventory:
+  - vin: YFGDKHZAXTR8KCPKG
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: R1ZGGKR0SRG55WYJ5
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Toyota
+  address: 117 Auto Row, Seattle, WA
+  distance_mi: 45.4
+  phone: 555-0101-1001
+  email: internet.sales@goldengatetoyota.example
+  website: https://goldengatetoyota.example
+  persona: payment_packer
+  floor_price: 37320.0
+  knobs: {}
+  inventory:
+  - vin: 30Z3ZD9S8KWDR8UX5
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: 886RCHG7TCFKD9L84
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Toyota
+  address: 134 Auto Row, Seattle, WA
+  distance_mi: 11.3
+  phone: 555-0102-1002
+  email: internet.sales@peninsulatoyota.example
+  website: https://peninsulatoyota.example
+  persona: fee_stuffer
+  floor_price: 36820.0
+  knobs: {}
+  inventory:
+  - vin: GLLXP3FBZKA1PKY4T
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: DYTS8S9K22A56L94G
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Toyota
+  address: 151 Auto Row, Seattle, WA
+  distance_mi: 20.8
+  phone: 555-0103-1003
+  email: internet.sales@harbortoyota.example
+  website: https://harbortoyota.example
+  persona: straight_shooter
+  floor_price: 36690.0
+  knobs:
+    opt_out: true
+  inventory:
+  - vin: 7LPC0AYA9KFAG4ZD5
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: 4V5HFMMUYU15SXBCY
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Toyota
+  address: 168 Auto Row, Seattle, WA
+  distance_mi: 26.0
+  phone: 555-0104-1004
+  email: internet.sales@summittoyota.example
+  website: https://summittoyota.example
+  persona: bait_and_switch
+  floor_price: 37570.0
+  knobs:
+    honesty: 0.5
+  inventory:
+  - vin: 29GWKCKD91WC9WMUU
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: VTJCDJ9M08END8AS9
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: accept_same_trim
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- fee-heavy
+- 5-dealers
+- opt-out
+- accept-substitutes
+- dishonest-final
+intake_answers: {}

@@ -1,0 +1,477 @@
+id: s17-hardball-15
+name: hardball / 15 dealers / v1
+description: Hyundai Ioniq 5 in NY, 15 dealers (hardball, 15-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Hyundai
+  model: Ioniq 5
+  trims:
+  - SEL
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Gray
+  - White
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 53100.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '10001'
+  state: NY
+  radius_mi: 50.0
+market:
+  msrp: 47400.0
+  invoice: 45100.0
+  destination: 1475.0
+  incentives:
+  - name: Retail Bonus
+    amount: 3000.0
+    finance_conditional: false
+  - name: Finance Cash
+    amount: 1500.0
+    finance_conditional: true
+  tax_rate: 0.08875
+  title_reg: 410.0
+  doc_fee_cap: 175.0
+  typical_doc_fee: 175.0
+  supply: slow
+dealers:
+- id: d01
+  name: Bayside Hyundai
+  address: 100 Auto Row, New York, NY
+  distance_mi: 15.4
+  phone: 555-0100-1000
+  email: internet.sales@baysidehyundai.example
+  website: https://baysidehyundai.example
+  persona: hardball
+  floor_price: 44440.0
+  knobs: {}
+  inventory:
+  - vin: NGZWGVUAV747YT6E8
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: E6T5J9HK5NUKKK212
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Hyundai
+  address: 117 Auto Row, New York, NY
+  distance_mi: 41.9
+  phone: 555-0101-1001
+  email: internet.sales@goldengatehyundai.example
+  website: https://goldengatehyundai.example
+  persona: hardball
+  floor_price: 43840.0
+  knobs: {}
+  inventory:
+  - vin: WBCNH2XU22DGHJ7V9
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: 8L7CCKZXVRYA3WZHK
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Hyundai
+  address: 134 Auto Row, New York, NY
+  distance_mi: 4.0
+  phone: 555-0102-1002
+  email: internet.sales@peninsulahyundai.example
+  website: https://peninsulahyundai.example
+  persona: hardball
+  floor_price: 44600.0
+  knobs: {}
+  inventory:
+  - vin: K40X0WJ6P7DG8DE2E
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: TJ0L6GGDKRTRD6MM0
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Hyundai
+  address: 151 Auto Row, New York, NY
+  distance_mi: 3.3
+  phone: 555-0103-1003
+  email: internet.sales@harborhyundai.example
+  website: https://harborhyundai.example
+  persona: hardball
+  floor_price: 44310.0
+  knobs: {}
+  inventory:
+  - vin: 1HHCVPPFFK15128C6
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: HP28C7HVMHFVYZT1P
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Hyundai
+  address: 168 Auto Row, New York, NY
+  distance_mi: 31.6
+  phone: 555-0104-1004
+  email: internet.sales@summithyundai.example
+  website: https://summithyundai.example
+  persona: hardball
+  floor_price: 45000.0
+  knobs: {}
+  inventory:
+  - vin: 1N6VYD4F8G4FF9V81
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: 5KBSAKXFYMCJPH9SK
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Hyundai
+  address: 185 Auto Row, New York, NY
+  distance_mi: 47.7
+  phone: 555-0105-1005
+  email: internet.sales@valleyhyundai.example
+  website: https://valleyhyundai.example
+  persona: hardball
+  floor_price: 44100.0
+  knobs: {}
+  inventory:
+  - vin: 0E23PGFG5ZPJU6M43
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: 7KC896VCBGJDDBMMT
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Hyundai
+  address: 202 Auto Row, New York, NY
+  distance_mi: 38.7
+  phone: 555-0106-1006
+  email: internet.sales@lakesidehyundai.example
+  website: https://lakesidehyundai.example
+  persona: hardball
+  floor_price: 44630.0
+  knobs: {}
+  inventory:
+  - vin: 7SE4BV69R1MH3S3US
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: L3RBK7YRHMXGXPYD9
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Hyundai
+  address: 219 Auto Row, New York, NY
+  distance_mi: 28.4
+  phone: 555-0107-1007
+  email: internet.sales@metrohyundai.example
+  website: https://metrohyundai.example
+  persona: hardball
+  floor_price: 44980.0
+  knobs: {}
+  inventory:
+  - vin: P31L6HXX30CK7KC7E
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: 20TZFJ5PZZKH9XSX9
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Hyundai
+  address: 236 Auto Row, New York, NY
+  distance_mi: 23.5
+  phone: 555-0108-1008
+  email: internet.sales@ridgehyundai.example
+  website: https://ridgehyundai.example
+  persona: hardball
+  floor_price: 44430.0
+  knobs: {}
+  inventory:
+  - vin: TBXGK0W8C9RSZNKT1
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: K7E1APKV3UUU4X3EZ
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Hyundai
+  address: 253 Auto Row, New York, NY
+  distance_mi: 2.6
+  phone: 555-0109-1009
+  email: internet.sales@coasthyundai.example
+  website: https://coasthyundai.example
+  persona: hardball
+  floor_price: 44200.0
+  knobs: {}
+  inventory:
+  - vin: D4PB36BTX1XDJKYWL
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: KA7S9XAFM5H96UY23
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Pioneer Hyundai
+  address: 270 Auto Row, New York, NY
+  distance_mi: 16.6
+  phone: 555-0110-1010
+  email: internet.sales@pioneerhyundai.example
+  website: https://pioneerhyundai.example
+  persona: hardball
+  floor_price: 45170.0
+  knobs: {}
+  inventory:
+  - vin: HD2KAA9Z1R87CEU5E
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: 1S5JCY1LPW1PJWFKU
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d12
+  name: Redwood Hyundai
+  address: 287 Auto Row, New York, NY
+  distance_mi: 42.1
+  phone: 555-0111-1011
+  email: internet.sales@redwoodhyundai.example
+  website: https://redwoodhyundai.example
+  persona: hardball
+  floor_price: 44590.0
+  knobs: {}
+  inventory:
+  - vin: J690N6NVL4VNSXARS
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: W6G68ULCRD5F2Y19Y
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d13
+  name: Crossroads Hyundai
+  address: 304 Auto Row, New York, NY
+  distance_mi: 26.7
+  phone: 555-0112-1012
+  email: internet.sales@crossroadshyundai.example
+  website: https://crossroadshyundai.example
+  persona: hardball
+  floor_price: 44240.0
+  knobs: {}
+  inventory:
+  - vin: XLE52VH0X8YZY9M9P
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: P9UKH37YL4CUX7GSM
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d14
+  name: Mission Hyundai
+  address: 321 Auto Row, New York, NY
+  distance_mi: 18.6
+  phone: 555-0113-1013
+  email: internet.sales@missionhyundai.example
+  website: https://missionhyundai.example
+  persona: hardball
+  floor_price: 44730.0
+  knobs: {}
+  inventory:
+  - vin: BKSXFEDZESAGVUPED
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: 6BJ3D4H8NXZLZU4HE
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d15
+  name: Northgate Hyundai
+  address: 338 Auto Row, New York, NY
+  distance_mi: 7.5
+  phone: 555-0114-1014
+  email: internet.sales@northgatehyundai.example
+  website: https://northgatehyundai.example
+  persona: hardball
+  floor_price: 44710.0
+  knobs: {}
+  inventory:
+  - vin: P2VTJ6DNJ4E7SWKGV
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: UE7RTC2WZLV8D9FTX
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- hardball
+- 15-dealers
+intake_answers: {}

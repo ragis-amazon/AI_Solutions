@@ -1,0 +1,362 @@
+id: showcase-camry-ca
+name: 'Showcase: one dealer per persona'
+description: Toyota Camry in CA, 10 dealers (showcase, all-personas)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Toyota
+  model: Camry
+  trims:
+  - XSE
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Silver
+  - Blue
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 37500.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '94107'
+  state: CA
+  radius_mi: 50.0
+market:
+  msrp: 33500.0
+  invoice: 31400.0
+  destination: 1145.0
+  incentives:
+  - name: Customer Cash
+    amount: 500.0
+    finance_conditional: false
+  - name: APR Bonus Cash
+    amount: 750.0
+    finance_conditional: true
+  tax_rate: 0.09375
+  title_reg: 485.0
+  doc_fee_cap: 85.0
+  typical_doc_fee: 85.0
+  supply: normal
+dealers:
+- id: d01
+  name: Bayside Toyota
+  address: 100 Auto Row, San Francisco, CA
+  distance_mi: 6.5
+  phone: 555-0100-1000
+  email: internet.sales@baysidetoyota.example
+  website: https://baysidetoyota.example
+  persona: straight_shooter
+  floor_price: 31100.0
+  knobs: {}
+  inventory:
+  - vin: 2DEG0D9PCF43ESF4D
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: HRD2DRCJV3KHWMGN0
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 1
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Toyota
+  address: 117 Auto Row, San Francisco, CA
+  distance_mi: 40.6
+  phone: 555-0101-1001
+  email: internet.sales@goldengatetoyota.example
+  website: https://goldengatetoyota.example
+  persona: fee_stuffer
+  floor_price: 31490.0
+  knobs: {}
+  inventory:
+  - vin: P84X660WSMSFW8Y5V
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: EH93LYK83CEXYZ86E
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Toyota
+  address: 134 Auto Row, San Francisco, CA
+  distance_mi: 5.8
+  phone: 555-0102-1002
+  email: internet.sales@peninsulatoyota.example
+  website: https://peninsulatoyota.example
+  persona: adm_gouger
+  floor_price: 31720.0
+  knobs: {}
+  inventory:
+  - vin: EDW5V1ZB6ZLH8DPVJ
+    year: 2026
+    trim: XSE
+    color: Blue
+    options: []
+    msrp: 33500.0
+  - vin: S228FL52UJ4U3Z1RK
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Toyota
+  address: 151 Auto Row, San Francisco, CA
+  distance_mi: 45.7
+  phone: 555-0103-1003
+  email: internet.sales@harbortoyota.example
+  website: https://harbortoyota.example
+  persona: come_on_in
+  floor_price: 30920.0
+  knobs: {}
+  inventory:
+  - vin: A8MTVAK30XJ9D6222
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: 2G72DNEP5LHYDGAKG
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Toyota
+  address: 168 Auto Row, San Francisco, CA
+  distance_mi: 17.2
+  phone: 555-0104-1004
+  email: internet.sales@summittoyota.example
+  website: https://summittoyota.example
+  persona: payment_packer
+  floor_price: 31390.0
+  knobs: {}
+  inventory:
+  - vin: P1KTZ07HH8677WFKG
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: YT7LBP0KBWFT0LZR9
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Toyota
+  address: 185 Auto Row, San Francisco, CA
+  distance_mi: 22.0
+  phone: 555-0105-1005
+  email: internet.sales@valleytoyota.example
+  website: https://valleytoyota.example
+  persona: slow_responder
+  floor_price: 31000.0
+  knobs: {}
+  inventory:
+  - vin: S2RN8ZBBU7TNZ5Z0F
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: RGR7NYP7A7ZFH1N7M
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Toyota
+  address: 202 Auto Row, San Francisco, CA
+  distance_mi: 43.3
+  phone: 555-0106-1006
+  email: internet.sales@lakesidetoyota.example
+  website: https://lakesidetoyota.example
+  persona: bait_and_switch
+  floor_price: 31410.0
+  knobs: {}
+  inventory:
+  - vin: 262FLLJBK6K7ZKJBA
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: GJ4NPBTPV9SXT3JDZ
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Toyota
+  address: 219 Auto Row, San Francisco, CA
+  distance_mi: 25.4
+  phone: 555-0107-1007
+  email: internet.sales@metrotoyota.example
+  website: https://metrotoyota.example
+  persona: exploding_offer
+  floor_price: 31440.0
+  knobs: {}
+  inventory:
+  - vin: 9JK9B5MAKMK7HDX7G
+    year: 2026
+    trim: XSE
+    color: Blue
+    options: []
+    msrp: 33500.0
+  - vin: DSNUCG95BE5X99NU5
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Toyota
+  address: 236 Auto Row, San Francisco, CA
+  distance_mi: 11.0
+  phone: 555-0108-1008
+  email: internet.sales@ridgetoyota.example
+  website: https://ridgetoyota.example
+  persona: hardball
+  floor_price: 31580.0
+  knobs: {}
+  inventory:
+  - vin: TN5J3H25XES4EPWHK
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  - vin: 0KTJ6RG28LRL492Y3
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Toyota
+  address: 253 Auto Row, San Francisco, CA
+  distance_mi: 45.2
+  phone: 555-0109-1009
+  email: internet.sales@coasttoyota.example
+  website: https://coasttoyota.example
+  persona: anti_bot
+  floor_price: 31090.0
+  knobs: {}
+  inventory:
+  - vin: BY65B1YV9EHRGFTUC
+    year: 2026
+    trim: XSE
+    color: Blue
+    options: []
+    msrp: 33500.0
+  - vin: MUJ4T2K98XFUDM4EU
+    year: 2026
+    trim: XSE
+    color: Black
+    options:
+    - Tech package
+    msrp: 35300.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Outpost Toyota
+  address: 9 Rural Rd, San Francisco, CA
+  distance_mi: 44.0
+  phone: 555-0199-2000
+  email: null
+  website: null
+  persona: straight_shooter
+  floor_price: 31090.0
+  knobs: {}
+  inventory:
+  - vin: FTFRETH6AY3UJCSHL
+    year: 2026
+    trim: XSE
+    color: Silver
+    options: []
+    msrp: 33500.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- showcase
+- all-personas
+intake_answers: {}

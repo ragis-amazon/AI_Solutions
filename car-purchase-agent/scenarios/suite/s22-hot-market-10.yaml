@@ -1,0 +1,341 @@
+id: s22-hot-market-10
+name: hot-market / 10 dealers / v2
+description: Honda CR-V Hybrid in NY, 10 dealers (hot-market, 10-dealers, never-writes, opt-out, accept-substitutes)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Honda
+  model: CR-V Hybrid
+  trims:
+  - Sport-L
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Black
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 44600.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '10001'
+  state: NY
+  radius_mi: 50.0
+market:
+  msrp: 39850.0
+  invoice: 37500.0
+  destination: 1395.0
+  incentives: []
+  tax_rate: 0.08875
+  title_reg: 410.0
+  doc_fee_cap: 175.0
+  typical_doc_fee: 175.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Honda
+  address: 100 Auto Row, New York, NY
+  distance_mi: 11.4
+  phone: 555-0100-1000
+  email: internet.sales@baysidehonda.example
+  website: https://baysidehonda.example
+  persona: exploding_offer
+  floor_price: 37470.0
+  knobs: {}
+  inventory:
+  - vin: F2EZS4DU7U1XHK26D
+    year: 2026
+    trim: Sport-L
+    color: Gray
+    options: []
+    msrp: 39850.0
+  - vin: KLCXXJ77Z75HFGS9J
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Honda
+  address: 117 Auto Row, New York, NY
+  distance_mi: 14.6
+  phone: 555-0101-1001
+  email: internet.sales@goldengatehonda.example
+  website: https://goldengatehonda.example
+  persona: adm_gouger
+  floor_price: 37450.0
+  knobs: {}
+  inventory:
+  - vin: 4Y0YPMVK9FYPGPK8D
+    year: 2026
+    trim: Sport-L
+    color: Gray
+    options: []
+    msrp: 39850.0
+  - vin: F7BCA6TVPA3J7ARUV
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Honda
+  address: 134 Auto Row, New York, NY
+  distance_mi: 37.9
+  phone: 555-0102-1002
+  email: internet.sales@peninsulahonda.example
+  website: https://peninsulahonda.example
+  persona: hardball
+  floor_price: 38430.0
+  knobs: {}
+  inventory:
+  - vin: N8MXC2B1J67CRGLVG
+    year: 2026
+    trim: Sport-L
+    color: Gray
+    options: []
+    msrp: 39850.0
+  - vin: 1VM7HZ8U9GSBCW93L
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Honda
+  address: 151 Auto Row, New York, NY
+  distance_mi: 17.5
+  phone: 555-0103-1003
+  email: internet.sales@harborhonda.example
+  website: https://harborhonda.example
+  persona: straight_shooter
+  floor_price: 37590.0
+  knobs:
+    opt_out: true
+  inventory:
+  - vin: A9CMTDXMXHPVFJMAP
+    year: 2026
+    trim: Sport-L
+    color: Gray
+    options: []
+    msrp: 39850.0
+  - vin: LAGCSN4A8YTDA86L3
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Honda
+  address: 168 Auto Row, New York, NY
+  distance_mi: 25.7
+  phone: 555-0104-1004
+  email: internet.sales@summithonda.example
+  website: https://summithonda.example
+  persona: come_on_in
+  floor_price: 38160.0
+  knobs:
+    visit_pushes: 3
+  inventory:
+  - vin: A2JP382MZTNF5YUGS
+    year: 2026
+    trim: Sport-L
+    color: Black
+    options: []
+    msrp: 39850.0
+  - vin: VGU2CCHGK8U3UR2G3
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Honda
+  address: 185 Auto Row, New York, NY
+  distance_mi: 30.0
+  phone: 555-0105-1005
+  email: internet.sales@valleyhonda.example
+  website: https://valleyhonda.example
+  persona: adm_gouger
+  floor_price: 38150.0
+  knobs: {}
+  inventory:
+  - vin: FEZAGPYDZZHJE849A
+    year: 2026
+    trim: Sport-L
+    color: Gray
+    options: []
+    msrp: 39850.0
+  - vin: 1H76JVT2ZU4P135ZV
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Honda
+  address: 202 Auto Row, New York, NY
+  distance_mi: 40.5
+  phone: 555-0106-1006
+  email: internet.sales@lakesidehonda.example
+  website: https://lakesidehonda.example
+  persona: exploding_offer
+  floor_price: 38130.0
+  knobs: {}
+  inventory:
+  - vin: F7J4XX9SWSVNNB5HR
+    year: 2026
+    trim: Sport-L
+    color: Black
+    options: []
+    msrp: 39850.0
+  - vin: VJ1E9SMYPU5C2U214
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Honda
+  address: 219 Auto Row, New York, NY
+  distance_mi: 38.0
+  phone: 555-0107-1007
+  email: internet.sales@metrohonda.example
+  website: https://metrohonda.example
+  persona: adm_gouger
+  floor_price: 37680.0
+  knobs: {}
+  inventory:
+  - vin: UZSBJX4HBPN2ZSKYU
+    year: 2026
+    trim: Sport-L
+    color: Black
+    options: []
+    msrp: 39850.0
+  - vin: U40Y0B23N5D03FAWR
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Honda
+  address: 236 Auto Row, New York, NY
+  distance_mi: 23.3
+  phone: 555-0108-1008
+  email: internet.sales@ridgehonda.example
+  website: https://ridgehonda.example
+  persona: hardball
+  floor_price: 37620.0
+  knobs: {}
+  inventory:
+  - vin: FF6XKT5NMURMFRG8J
+    year: 2026
+    trim: Sport-L
+    color: Black
+    options: []
+    msrp: 39850.0
+  - vin: V1BF86NSEUUH85TS4
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Honda
+  address: 253 Auto Row, New York, NY
+  distance_mi: 9.4
+  phone: 555-0109-1009
+  email: internet.sales@coasthonda.example
+  website: https://coasthonda.example
+  persona: straight_shooter
+  floor_price: 37770.0
+  knobs: {}
+  inventory:
+  - vin: P6FCLU4LC56N7RZJE
+    year: 2026
+    trim: Sport-L
+    color: Gray
+    options: []
+    msrp: 39850.0
+  - vin: L8MW6YXRT0XADB7SR
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: accept_same_trim
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- hot-market
+- 10-dealers
+- never-writes
+- opt-out
+- accept-substitutes
+intake_answers: {}

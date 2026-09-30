@@ -1,0 +1,228 @@
+id: s20-hot-market-5
+name: hot-market / 5 dealers / v2
+description: Kia Telluride in CA, 5 dealers (hot-market, 5-dealers, never-writes, opt-out, accept-substitutes, dishonest-final)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Kia
+  model: Telluride
+  trims:
+  - SX
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Black
+  - White
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 52400.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '94107'
+  state: CA
+  radius_mi: 50.0
+market:
+  msrp: 46800.0
+  invoice: 44300.0
+  destination: 1445.0
+  incentives: []
+  tax_rate: 0.09375
+  title_reg: 485.0
+  doc_fee_cap: 85.0
+  typical_doc_fee: 85.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Kia
+  address: 100 Auto Row, San Francisco, CA
+  distance_mi: 12.7
+  phone: 555-0100-1000
+  email: internet.sales@baysidekia.example
+  website: https://baysidekia.example
+  persona: exploding_offer
+  floor_price: 44240.0
+  knobs:
+    honesty: 0.5
+  inventory:
+  - vin: 2MVMU03UW3D5JC8M3
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: HFK12F8A12RMVHJMY
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 1
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Kia
+  address: 117 Auto Row, San Francisco, CA
+  distance_mi: 42.4
+  phone: 555-0101-1001
+  email: internet.sales@goldengatekia.example
+  website: https://goldengatekia.example
+  persona: adm_gouger
+  floor_price: 44610.0
+  knobs: {}
+  inventory:
+  - vin: XNFYJ2MFN9U3ALVWH
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: ZYNHHLYTULZ9MJ69B
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Kia
+  address: 134 Auto Row, San Francisco, CA
+  distance_mi: 39.8
+  phone: 555-0102-1002
+  email: internet.sales@peninsulakia.example
+  website: https://peninsulakia.example
+  persona: hardball
+  floor_price: 44440.0
+  knobs: {}
+  inventory:
+  - vin: P05BK8F2F4RMLDTH3
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: U8ZCPAT4P38TAD93S
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Kia
+  address: 151 Auto Row, San Francisco, CA
+  distance_mi: 8.8
+  phone: 555-0103-1003
+  email: internet.sales@harborkia.example
+  website: https://harborkia.example
+  persona: straight_shooter
+  floor_price: 44480.0
+  knobs:
+    opt_out: true
+  inventory:
+  - vin: D42GB1CZCY5ERWK8H
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: SJZUNG1D9BY8HAN11
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Kia
+  address: 168 Auto Row, San Francisco, CA
+  distance_mi: 6.6
+  phone: 555-0104-1004
+  email: internet.sales@summitkia.example
+  website: https://summitkia.example
+  persona: come_on_in
+  floor_price: 44560.0
+  knobs:
+    visit_pushes: 3
+  inventory:
+  - vin: Z9SD1TB46B1X4VZHZ
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: D45R3YM3UNM2RWCRN
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Outpost Kia
+  address: 9 Rural Rd, San Francisco, CA
+  distance_mi: 44.0
+  phone: 555-0199-2000
+  email: null
+  website: null
+  persona: straight_shooter
+  floor_price: 43860.0
+  knobs: {}
+  inventory:
+  - vin: NZZ7DM95M7GBBEXZW
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: accept_same_trim
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- hot-market
+- 5-dealers
+- never-writes
+- opt-out
+- accept-substitutes
+- dishonest-final
+intake_answers: {}

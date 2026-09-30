@@ -1,0 +1,201 @@
+id: s01-balanced-5
+name: balanced / 5 dealers / v1
+description: Toyota RAV4 Hybrid in TX, 5 dealers (balanced, 5-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Toyota
+  model: RAV4 Hybrid
+  trims:
+  - XLE Premium
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - White
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 43600.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '78701'
+  state: TX
+  radius_mi: 50.0
+market:
+  msrp: 38900.0
+  invoice: 36600.0
+  destination: 1395.0
+  incentives: []
+  tax_rate: 0.0625
+  title_reg: 320.0
+  doc_fee_cap: null
+  typical_doc_fee: 150.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Toyota
+  address: 100 Auto Row, Austin, TX
+  distance_mi: 28.7
+  phone: 555-0100-1000
+  email: internet.sales@baysidetoyota.example
+  website: https://baysidetoyota.example
+  persona: straight_shooter
+  floor_price: 37350.0
+  knobs: {}
+  inventory:
+  - vin: NF1L302NDB8N9KBG3
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: JGT4E2FWZL2CKGPA4
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Toyota
+  address: 117 Auto Row, Austin, TX
+  distance_mi: 30.1
+  phone: 555-0101-1001
+  email: internet.sales@goldengatetoyota.example
+  website: https://goldengatetoyota.example
+  persona: fee_stuffer
+  floor_price: 37310.0
+  knobs: {}
+  inventory:
+  - vin: J5PCD04MHZPCFR07B
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: 5DJKH7TTGBRH8N0GE
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Toyota
+  address: 134 Auto Row, Austin, TX
+  distance_mi: 42.9
+  phone: 555-0102-1002
+  email: internet.sales@peninsulatoyota.example
+  website: https://peninsulatoyota.example
+  persona: adm_gouger
+  floor_price: 37040.0
+  knobs: {}
+  inventory:
+  - vin: B6TY82W9YPGWJ9MEP
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: TWEHHGFSEN962H6DP
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Toyota
+  address: 151 Auto Row, Austin, TX
+  distance_mi: 9.2
+  phone: 555-0103-1003
+  email: internet.sales@harbortoyota.example
+  website: https://harbortoyota.example
+  persona: come_on_in
+  floor_price: 37330.0
+  knobs: {}
+  inventory:
+  - vin: EE5SN5KJEYUW5E7HT
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: V36BL4J7UPG9077L9
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Toyota
+  address: 168 Auto Row, Austin, TX
+  distance_mi: 20.6
+  phone: 555-0104-1004
+  email: internet.sales@summittoyota.example
+  website: https://summittoyota.example
+  persona: payment_packer
+  floor_price: 37050.0
+  knobs: {}
+  inventory:
+  - vin: BT1AH5WT0FAW95M2V
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: LRBU2Z6HD3N4PZ6HS
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- balanced
+- 5-dealers
+intake_answers: {}
