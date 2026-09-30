@@ -108,6 +108,7 @@ class LLM:
         self.neuron_budget = neuron_budget
         self._resolved: dict[str, Any] = {}
         self._retry_spent_s = 0.0
+        self._daily_retries = 0
         os.environ.setdefault("PYDANTIC_AI_NO_BANNER", "1")
 
     @property
@@ -201,6 +202,11 @@ class LLM:
                     raise ProviderStopped(self.usage.stop_reason) from e
                 if decision.kind == "retry":
                     self.usage.retries += 1
+                    if "perday" in decision.reason.lower().replace("_", "").replace("-", ""):
+                        self._daily_retries += 1
+                        if self._daily_retries >= 3:
+                            self._stop("free daily quota exhausted: " + decision.reason)
+                            raise ProviderStopped(self.usage.stop_reason) from e
                     if decision.tighten_pace:
                         self.pacer.tighten()
                     wait = min(decision.wait_s, 120.0)
@@ -213,6 +219,7 @@ class LLM:
                     continue
                 raise
         self._retry_spent_s = 0.0
+        self._daily_retries = 0
         self._record_usage(role, tier, res.usage)
         if self.usage.quota_exhausted:
             # The call that crossed the neuron budget succeeded. The next call stops the campaign.

@@ -114,7 +114,12 @@ def classify_provider_error(exc: BaseException) -> ErrorDecision:
     folded = text.lower()
     compact = _norm(text)
     wait = _duration_seconds(text, headers)
-    reason = " ".join(folded.split())[:300]
+    quota_id = ""
+    match = re.search(r"quotaId[\"']?\s*[:=]\s*[\"']?([A-Za-z0-9_-]+)", text)
+    if match:
+        quota_id = match.group(1)
+    reason = (quota_id + ": " if quota_id else "") + " ".join(folded.split())
+    reason = reason[:300]
 
     if status in (401, 403) or any(p in folded for p in ("invalid api key", "api key not valid", "unauthorized")):
         return ErrorDecision("stop", 0.0, reason or "authentication failed")
@@ -145,8 +150,15 @@ def classify_provider_error(exc: BaseException) -> ErrorDecision:
         )
     )
 
-    if daily or credit:
+    if credit:
         return ErrorDecision("stop", wait or 0.0, reason or "free quota exhausted")
+
+    # A per-day quota id with a long reset has used the free budget. A short reset can be one
+    # request aging out of a rolling window, so the caller may retry a few times.
+    if daily and not minute:
+        if wait is not None and wait <= 180:
+            return ErrorDecision("retry", wait, reason or "daily quota window", tighten_pace=True)
+        return ErrorDecision("stop", wait or 0.0, reason or "free daily quota exhausted")
 
     if minute or (status == 429 and (wait is None or wait <= 180)):
         if wait is not None and wait > 180:

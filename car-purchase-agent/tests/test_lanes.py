@@ -53,6 +53,11 @@ def test_per_minute_429_retries_and_daily_or_credit_stops():
         "Quota exceeded. quotaId GenerateRequestsPerDayPerProjectPerModel-FreeTier. Please try again in 6h12m.",
     )
     assert classify_provider_error(daily).kind == "stop"
+    short_daily = _Err(
+        429,
+        'quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier". Please retry in 34s.',
+    )
+    assert classify_provider_error(short_daily).kind == "retry"
 
     credit = _Err(402, "Insufficient balance")
     assert classify_provider_error(credit).kind == "stop"
