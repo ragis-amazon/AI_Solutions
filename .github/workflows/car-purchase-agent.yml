@@ -1,0 +1,41 @@
+name: car-purchase-agent
+
+on:
+  push:
+    branches: [main]
+    paths: ["car-purchase-agent/**", ".github/workflows/car-purchase-agent.yml"]
+  pull_request:
+    paths: ["car-purchase-agent/**", ".github/workflows/car-purchase-agent.yml"]
+  schedule:
+    - cron: "17 7 * * *"
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: car-purchase-agent
+
+jobs:
+  test-and-smoke-eval:
+    runs-on: ubuntu-latest
+    env:
+      CARBUYER_LLM_BACKEND: mock
+      PYDANTIC_AI_NO_BANNER: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev,console]"
+      - run: python -m pytest
+      - name: Smoke eval (30 campaigns, hard gate = 0 policy violations)
+        if: github.event_name != 'schedule'
+        run: carbuyer eval --seeds 1 --name ci-smoke --gate --report smoke-report.md --no-store
+      - name: Nightly full suite (30 scenarios x 3 seeds + showcase)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: carbuyer eval --suite scenarios/showcase.yaml scenarios/suite --seeds 1,2,3 --name nightly --gate --report nightly-report.md --no-store
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: eval-reports
+          path: car-purchase-agent/*-report.md
+          if-no-files-found: ignore
