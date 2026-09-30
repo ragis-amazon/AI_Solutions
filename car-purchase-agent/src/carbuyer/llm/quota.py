@@ -43,7 +43,7 @@ def redact_secrets(text: str) -> str:
         value = os.environ.get(name)
         if value:
             out = out.replace(value, "<redacted>")
-    return out
+    return re.sub(r"org_[A-Za-z0-9]+", "<org>", out)
 
 
 def _blob(exc: BaseException) -> tuple[int | None, str, dict[str, str]]:
@@ -157,6 +157,9 @@ def classify_provider_error(exc: BaseException) -> ErrorDecision:
         if wait is not None and wait <= 180:
             return ErrorDecision("retry", wait, reason or "rate limit", tighten_pace=True)
         return ErrorDecision("stop", wait or 0.0, reason or "free quota exhausted")
+
+    if status == 413 or "too large" in folded or "request too large" in folded:
+        return ErrorDecision("retry", wait if wait is not None else 30.0, reason or "request larger than the current token window", tighten_pace=True)
 
     if status in (408, 409, 425, 500, 502, 503, 504) or "unavailable" in folded or "high demand" in folded:
         return ErrorDecision("retry", wait if wait is not None else 8.0, reason or "provider unavailable", tighten_pace=False)

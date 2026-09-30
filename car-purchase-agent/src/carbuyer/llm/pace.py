@@ -7,6 +7,13 @@ from collections.abc import Callable
 
 
 class TokenPacer:
+    """Hold requests until a rolling 60s window can fit the next reservation.
+
+    Providers enforce tokens per minute on a rolling window, and some also reserve
+    the requested max output against that window. Waiting only for the average rate
+    lets the next call land while the previous tokens are still inside the window.
+    """
+
     def __init__(
         self,
         *,
@@ -20,20 +27,30 @@ class TokenPacer:
         self._sleep = sleep or time.sleep
         self._clock = clock or time.monotonic
         self._next_ok = 0.0
-        self._debt_until = 0.0
+        self._events: list[tuple[float, int]] = []
 
-    def before(self) -> None:
+    def before(self, reserve: int = 0) -> None:
+        if self.tokens_per_minute and reserve >= self.tokens_per_minute:
+            reserve = int(self.tokens_per_minute * 0.5)
+        while self.tokens_per_minute:
+            now = self._clock()
+            self._events = [(t, n) for t, n in self._events if now - t < 60]
+            used = sum(n for _, n in self._events)
+            if used + reserve <= self.tokens_per_minute or not self._events:
+                break
+            oldest = min(t for t, _ in self._events)
+            self._sleep(max(0.05, 60 - (now - oldest) + 0.05))
         now = self._clock()
-        wait = max(0.0, self._next_ok - now, self._debt_until - now)
+        wait = self._next_ok - now
         if wait > 0:
             self._sleep(wait)
-        now = self._clock()
+            now = self._clock()
         if self.min_interval_s > 0:
             self._next_ok = now + self.min_interval_s
 
     def after(self, tokens: int) -> None:
-        if self.tokens_per_minute and tokens > 0:
-            self._debt_until = self._clock() + (tokens / self.tokens_per_minute) * 60.0
+        if tokens > 0:
+            self._events.append((self._clock(), tokens))
 
     def sleep(self, seconds: float) -> None:
         if seconds > 0:

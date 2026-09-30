@@ -63,10 +63,12 @@ def test_per_minute_429_retries_and_daily_or_credit_stops():
     zero = _Err(429, "Rate limit exceeded", {"x-ratelimit-limit-req-minute": "0"})
     assert classify_provider_error(zero).kind == "stop"
 
+    too_big = _Err(413, "request too large for model on output tokens")
+    assert classify_provider_error(too_big).kind == "retry"
     assert classify_provider_error(RuntimeError("provider down")).kind == "fallback"
 
 
-def test_pacer_waits_out_the_token_budget():
+def test_pacer_waits_for_the_rolling_token_window():
     clock = {"t": 0.0}
 
     def now():
@@ -75,12 +77,12 @@ def test_pacer_waits_out_the_token_budget():
     def sleep(seconds):
         clock["t"] += seconds
 
-    pacer = TokenPacer(tokens_per_minute=6000, min_interval_s=2, sleep=sleep, clock=now)
-    pacer.before()
+    pacer = TokenPacer(tokens_per_minute=1000, min_interval_s=2, sleep=sleep, clock=now)
+    pacer.before(reserve=100)
     assert clock["t"] == 0
-    pacer.after(1000)  # 10 seconds of budget at 6000 tokens/minute
-    pacer.before()
-    assert clock["t"] == 10  # token debt is longer than the 2 second floor
+    pacer.after(600)
+    pacer.before(reserve=800)  # 600 still in the window cannot fit another 800
+    assert clock["t"] == 60.05
 
 
 def test_quota_stop_is_not_swallowed_as_a_mock_fallback():

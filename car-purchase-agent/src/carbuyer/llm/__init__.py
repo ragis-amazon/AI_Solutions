@@ -184,7 +184,10 @@ class LLM:
             retries=0,
         )
         while True:
-            self.pacer.before()
+            reserve = 0
+            if self.model_settings and self.model_settings.get("max_tokens"):
+                reserve = int(self.model_settings["max_tokens"])
+            self.pacer.before(reserve)
             self.usage.requests += 1
             try:
                 res = agent.run_sync(prompt)
@@ -205,7 +208,7 @@ class LLM:
                     if self._retry_spent_s > 900:
                         self._stop("rate limit did not clear: " + (decision.reason or ""))
                         raise ProviderStopped(self.usage.stop_reason) from e
-                    log.warning("LLM %s retry in %.0fs (%s)", role, wait, decision.reason[:160])
+                    log.warning("LLM %s retry in %.0fs (%s)", role, wait, redact_secrets(decision.reason)[:160])
                     self.pacer.sleep(wait)
                     continue
                 raise
