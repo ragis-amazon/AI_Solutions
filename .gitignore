@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+car-purchase-agent/data/
+*.sqlite
+*.sqlite-*
