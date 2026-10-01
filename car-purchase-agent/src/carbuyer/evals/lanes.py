@@ -44,6 +44,7 @@ class LaneSpec:
     model: str
     note: str
     tokens_per_minute: float | None = None
+    output_tokens_per_minute: float | None = None
     min_interval_s: float = 0.0
     neuron_budget: float | None = None
     neuron_rates: tuple[float, float] | None = None
@@ -119,11 +120,15 @@ def configured_lanes() -> list[LaneSpec]:
                 label="Groq Qwen 27B",
                 model="groq:qwen/qwen3.8-27b",
                 tokens_per_minute=7600,
-                min_interval_s=0.2,
+                output_tokens_per_minute=800,
+                min_interval_s=0.5,
+                max_tokens=400,
                 model_settings={"groq_reasoning_effort": "none"},
                 note=(
                     "qwen/qwen3.8-27b, the current Qwen 27B on this account (qwen3.6-27b is not served). "
-                    "Same 8,000 tokens/minute cap, paced at about 7,600. Reasoning is disabled."
+                    "Total tokens are capped at 8,000 per minute, but this model's output cap is 1,000 per minute, "
+                    "so the lane paces output at about 800 tokens/minute and asks for at most 400 tokens back. "
+                    "Reasoning is disabled."
                 ),
             )
         )
@@ -185,7 +190,11 @@ def make_llm(spec: LaneSpec) -> LLM:
     return LLM(
         "pydantic_ai",
         models={tier: spec.model for tier in ("small", "mid", "frontier")},
-        pacer=TokenPacer(tokens_per_minute=spec.tokens_per_minute, min_interval_s=spec.min_interval_s),
+        pacer=TokenPacer(
+            tokens_per_minute=spec.tokens_per_minute,
+            output_tokens_per_minute=spec.output_tokens_per_minute,
+            min_interval_s=spec.min_interval_s,
+        ),
         model_settings=settings,
         structured_mode="prompted" if spec.structured_mode == "prompted" else "tool",
         neuron_rates=spec.neuron_rates,
@@ -293,6 +302,8 @@ def _pace_text(spec: LaneSpec) -> str:
     parts = []
     if spec.tokens_per_minute:
         parts.append(f"{spec.tokens_per_minute:.0f} tokens/minute")
+    if spec.output_tokens_per_minute:
+        parts.append(f"{spec.output_tokens_per_minute:.0f} output tokens/minute")
     if spec.min_interval_s:
         parts.append(f"at least {spec.min_interval_s:.1f}s between requests")
     if spec.neuron_budget:

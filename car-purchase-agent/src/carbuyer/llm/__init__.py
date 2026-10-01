@@ -163,7 +163,7 @@ class LLM:
         self.usage.output_tokens += out + reasoning
         self.usage.cost_usd += (inp * pin + (out + reasoning) * pout) / 1e6
         self.usage.by_role[role] = self.usage.by_role.get(role, 0) + 1
-        self.pacer.after(total)
+        self.pacer.after(total, output_tokens=out + reasoning)
         if self.neuron_rates:
             per_in, per_out = self.neuron_rates
             self.usage.neurons += (inp * per_in + (out + reasoning) * per_out) / 1e6
@@ -188,7 +188,8 @@ class LLM:
             reserve = 0
             if self.model_settings and self.model_settings.get("max_tokens"):
                 reserve = int(self.model_settings["max_tokens"])
-            self.pacer.before(reserve)
+            reserve_output = reserve if self.pacer.output_tokens_per_minute else 0
+            self.pacer.before(reserve, reserve_output)
             self.usage.requests += 1
             try:
                 res = agent.run_sync(prompt)

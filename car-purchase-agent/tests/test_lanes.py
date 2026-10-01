@@ -88,6 +88,9 @@ def test_pacer_waits_for_the_rolling_token_window():
     pacer.after(600)
     pacer.before(reserve=800)  # 600 still in the window cannot fit another 800
     assert clock["t"] == 60.05
+    pacer.tighten()
+    pacer.tighten()
+    assert pacer.min_interval_s <= 20
 
 
 def test_quota_stop_is_not_swallowed_as_a_mock_fallback():
