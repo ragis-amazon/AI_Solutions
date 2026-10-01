@@ -50,8 +50,11 @@ def _mistral(name: str) -> Any:
     from pydantic_ai.models.mistral import MistralModel
     from pydantic_ai.providers.mistral import MistralProvider
 
+    # The SDK otherwise waits 300s, and a stalled socket can ignore that and sit forever.
+    # 90s turns a hung completion into an error the lane can skip past.
     client = Mistral(
         api_key=os.environ.get("MISTRAL_API_KEY"),
+        timeout_ms=90_000,
         retry_config=RetryConfig(
             strategy="none",
             backoff=BackoffStrategy(0, 0, 1.0, 0),
