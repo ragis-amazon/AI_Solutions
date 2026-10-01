@@ -112,6 +112,37 @@ def test_substitute_accepted_when_hitl_allows(showcase):
     assert t.state != TS.CLOSED_LOST or t.close_reason != "declined"
 
 
+def test_negotiating_visit_push_does_not_rewind(showcase):
+    from carbuyer.agents.negotiator import Negotiator
+    from carbuyer.models import DealerContact, Message
+    from carbuyer.workflows.campaign import CampaignEngine, ThreadRecord
+
+    eng = CampaignEngine(showcase, seed=1)
+    eng.spec = showcase.spec
+    eng.negotiator = Negotiator(eng.buyer, eng.spec, eng.market)
+    dealer = eng.world.dealer_meta["d01"]
+    contact = DealerContact(dealer_id=dealer.id, channel="email", value="sales@example.com", verified=True)
+    negotiating = ThreadRecord(dealer=dealer, contact=contact, state=TS.NEGOTIATING, vehicle=eng._pick_vehicle(dealer))
+    eng.threads[dealer.id] = negotiating
+    msg = Message(
+        id="m-visit",
+        campaign_id=eng.campaign_id,
+        dealer_id=dealer.id,
+        direction="inbound",
+        channel="email",
+        body="Numbers are better in person. Come on in and we'll work something out.",
+        ts=eng.now(),
+    )
+    eng._on_inbound(negotiating, msg)
+    assert negotiating.state == TS.NEGOTIATING
+
+    engaged = ThreadRecord(dealer=dealer, contact=contact, state=TS.ENGAGED, vehicle=negotiating.vehicle)
+    eng.threads[dealer.id] = engaged
+    msg2 = msg.model_copy(update={"id": "m-visit-2"})
+    eng._on_inbound(engaged, msg2)
+    assert engaged.state == TS.PUSH_FOR_WRITTEN_OTD
+
+
 def test_hitl1_rejection_stops_before_outreach(showcase):
     s = showcase.model_copy(deep=True)
     s.hitl.approve_spec = False

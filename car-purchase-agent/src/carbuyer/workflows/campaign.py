@@ -441,6 +441,36 @@ class CampaignEngine:
         return rec
 
     # ------------------------------------------------------------------ inbound handling
+    def _send_visit_push_email(self, t: ThreadRecord, msg: Message, cls) -> None:
+        subject, body = self.negotiator.push_for_written(t.dealer, t.vehicle)
+        extra = self.negotiator.answers([q for q in cls.questions], True, t.vehicle)
+        if extra:
+            body = body.replace("\n\nThank you,", " " + " ".join(extra) + "\n\nThank you,")
+        self._email(t, "push_for_written", subject, body, f"{self.campaign_id}:{msg.id}:push")
+
+    def _on_visit_push(self, t: ThreadRecord, msg: Message, cls) -> None:
+        """Ask for a written OTD without leaving a state that cannot move there.
+
+        NEGOTIATING -> PUSH_FOR_WRITTEN_OTD is illegal. Once a thread is already
+        quoting, a "come in" stall stays in that state instead of aborting the deal.
+        """
+        if t.state in QUOTING:
+            self._send_visit_push_email(t, msg, cls)
+            return
+        if t.visit_pushes >= 2:
+            if t.state != TS.IN_PERSON_ONLY:
+                if t.state != TS.PUSH_FOR_WRITTEN_OTD and allowed(t.state, TS.PUSH_FOR_WRITTEN_OTD):
+                    self._tx(t, TS.PUSH_FOR_WRITTEN_OTD, "visit push")
+                if allowed(t.state, TS.IN_PERSON_ONLY):
+                    self._tx(t, TS.IN_PERSON_ONLY, "no written OTD after 2 tries")
+            return
+        t.visit_pushes += 1
+        if allowed(t.state, TS.PUSH_FOR_WRITTEN_OTD):
+            self._tx(t, TS.PUSH_FOR_WRITTEN_OTD, "come in")
+        elif t.state != TS.PUSH_FOR_WRITTEN_OTD:
+            return
+        self._send_visit_push_email(t, msg, cls)
+
     def _on_inbound(self, t: ThreadRecord, msg: Message) -> None:
         cls = self.classifier.classify(msg)
         msg.classified = cls
@@ -476,20 +506,20 @@ class CampaignEngine:
             self._on_substitute(t, msg, cls)
             return
         if cls.label == "push_to_visit":
-            if t.visit_pushes >= 2:
-                if t.state != TS.IN_PERSON_ONLY:
-                    if t.state != TS.PUSH_FOR_WRITTEN_OTD:
-                        self._tx(t, TS.PUSH_FOR_WRITTEN_OTD, "visit push")
-                    self._tx(t, TS.IN_PERSON_ONLY, "no written OTD after 2 tries")
+            keyword = self.classifier.keyword(msg.body)
+            can_take_quote = t.state in (
+                TS.ENGAGED,
+                TS.PUSH_FOR_WRITTEN_OTD,
+                TS.IN_PERSON_ONLY,
+                TS.REQUEST_ITEMIZATION,
+                TS.SUBSTITUTE_PROPOSED,
+            ) or t.state in QUOTING
+            if keyword.label == "quote" and can_take_quote:
+                # A written quote mislabeled as a visit push still has to be parsed.
+                cls = keyword
+            else:
+                self._on_visit_push(t, msg, cls)
                 return
-            t.visit_pushes += 1
-            self._tx(t, TS.PUSH_FOR_WRITTEN_OTD, "come in")
-            subject, body = self.negotiator.push_for_written(t.dealer, t.vehicle)
-            extra = self.negotiator.answers([q for q in cls.questions], True, t.vehicle)
-            if extra:
-                body = body.replace("\n\nThank you,", " " + " ".join(extra) + "\n\nThank you,")
-            self._email(t, "push_for_written", subject, body, f"{self.campaign_id}:{msg.id}:push")
-            return
         if cls.label == "quote":
             self._on_quote(t, msg, cls)
         if cls.questions:
