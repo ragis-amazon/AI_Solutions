@@ -1,0 +1,339 @@
+id: s27-slow-market-10
+name: slow-market / 10 dealers / v1
+description: Subaru Outback in NY, 10 dealers (slow-market, 10-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Subaru
+  model: Outback
+  trims:
+  - Limited
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Blue
+  - Green
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 43000.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '10001'
+  state: NY
+  radius_mi: 50.0
+market:
+  msrp: 38400.0
+  invoice: 35900.0
+  destination: 1420.0
+  incentives:
+  - name: Loyalty Cash
+    amount: 1000.0
+    finance_conditional: false
+  tax_rate: 0.08875
+  title_reg: 410.0
+  doc_fee_cap: 175.0
+  typical_doc_fee: 175.0
+  supply: slow
+dealers:
+- id: d01
+  name: Bayside Subaru
+  address: 100 Auto Row, New York, NY
+  distance_mi: 9.1
+  phone: 555-0100-1000
+  email: internet.sales@baysidesubaru.example
+  website: https://baysidesubaru.example
+  persona: straight_shooter
+  floor_price: 34850.0
+  knobs: {}
+  inventory:
+  - vin: 8RA3C99DT0U7D1FGE
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: UWA5028N36CGKKVVA
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Subaru
+  address: 117 Auto Row, New York, NY
+  distance_mi: 31.9
+  phone: 555-0101-1001
+  email: internet.sales@goldengatesubaru.example
+  website: https://goldengatesubaru.example
+  persona: slow_responder
+  floor_price: 35350.0
+  knobs: {}
+  inventory:
+  - vin: X1GJLC5DKGH7S7CHC
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: FB73D7TJKTY674AX2
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Subaru
+  address: 134 Auto Row, New York, NY
+  distance_mi: 41.7
+  phone: 555-0102-1002
+  email: internet.sales@peninsulasubaru.example
+  website: https://peninsulasubaru.example
+  persona: slow_responder
+  floor_price: 34870.0
+  knobs: {}
+  inventory:
+  - vin: MF3EKLMN0PY3592L1
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: 57LVR4ZKB3P80CUW1
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Subaru
+  address: 151 Auto Row, New York, NY
+  distance_mi: 22.8
+  phone: 555-0103-1003
+  email: internet.sales@harborsubaru.example
+  website: https://harborsubaru.example
+  persona: hardball
+  floor_price: 35300.0
+  knobs: {}
+  inventory:
+  - vin: ZJBEKSNP83701FR3C
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: YTP0L0UTDEHX9AMPB
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Subaru
+  address: 168 Auto Row, New York, NY
+  distance_mi: 12.5
+  phone: 555-0104-1004
+  email: internet.sales@summitsubaru.example
+  website: https://summitsubaru.example
+  persona: come_on_in
+  floor_price: 34960.0
+  knobs: {}
+  inventory:
+  - vin: MHRCDW4GFBW4VE7WR
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: 90ZT9ZJNUFS2BS83A
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Subaru
+  address: 185 Auto Row, New York, NY
+  distance_mi: 36.5
+  phone: 555-0105-1005
+  email: internet.sales@valleysubaru.example
+  website: https://valleysubaru.example
+  persona: straight_shooter
+  floor_price: 35050.0
+  knobs: {}
+  inventory:
+  - vin: 4637H4FFBSNAGEJXV
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: J8JN3FDSVPLJ2F2M7
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Subaru
+  address: 202 Auto Row, New York, NY
+  distance_mi: 26.2
+  phone: 555-0106-1006
+  email: internet.sales@lakesidesubaru.example
+  website: https://lakesidesubaru.example
+  persona: straight_shooter
+  floor_price: 35640.0
+  knobs: {}
+  inventory:
+  - vin: NDW5GGES2N2N54Y57
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: PUXCBUD30MC63JUEN
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Subaru
+  address: 219 Auto Row, New York, NY
+  distance_mi: 4.8
+  phone: 555-0107-1007
+  email: internet.sales@metrosubaru.example
+  website: https://metrosubaru.example
+  persona: slow_responder
+  floor_price: 35070.0
+  knobs: {}
+  inventory:
+  - vin: CW5UWLUS3TXZ5V1SX
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: SL6DLPKLN63VBRABW
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Subaru
+  address: 236 Auto Row, New York, NY
+  distance_mi: 3.2
+  phone: 555-0108-1008
+  email: internet.sales@ridgesubaru.example
+  website: https://ridgesubaru.example
+  persona: slow_responder
+  floor_price: 34950.0
+  knobs: {}
+  inventory:
+  - vin: 8ZPELUP4S17DWJJE2
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: K5GU3HLWBW75B3Z69
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Subaru
+  address: 253 Auto Row, New York, NY
+  distance_mi: 38.2
+  phone: 555-0109-1009
+  email: internet.sales@coastsubaru.example
+  website: https://coastsubaru.example
+  persona: hardball
+  floor_price: 35740.0
+  knobs: {}
+  inventory:
+  - vin: DNFSJL6FZF2NRHJM0
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: U68F57D6KT8SX08AG
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- slow-market
+- 10-dealers
+intake_answers: {}

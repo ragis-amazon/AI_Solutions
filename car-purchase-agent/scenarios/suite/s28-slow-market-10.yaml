@@ -1,0 +1,349 @@
+id: s28-slow-market-10
+name: slow-market / 10 dealers / v2
+description: Hyundai Ioniq 5 in WA, 10 dealers (slow-market, 10-dealers, never-writes, opt-out, accept-substitutes, dishonest-final)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Hyundai
+  model: Ioniq 5
+  trims:
+  - SEL
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Gray
+  - White
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 53100.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '98101'
+  state: WA
+  radius_mi: 50.0
+market:
+  msrp: 47400.0
+  invoice: 45100.0
+  destination: 1475.0
+  incentives:
+  - name: Retail Bonus
+    amount: 3000.0
+    finance_conditional: false
+  - name: Finance Cash
+    amount: 1500.0
+    finance_conditional: true
+  tax_rate: 0.1025
+  title_reg: 520.0
+  doc_fee_cap: 200.0
+  typical_doc_fee: 200.0
+  supply: slow
+dealers:
+- id: d01
+  name: Bayside Hyundai
+  address: 100 Auto Row, Seattle, WA
+  distance_mi: 28.8
+  phone: 555-0100-1000
+  email: internet.sales@baysidehyundai.example
+  website: https://baysidehyundai.example
+  persona: slow_responder
+  floor_price: 44410.0
+  knobs: {}
+  inventory:
+  - vin: TN6Z1NBBHFPEEGXDM
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: Z4RKWHY19HM6CUF4K
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Hyundai
+  address: 117 Auto Row, Seattle, WA
+  distance_mi: 5.1
+  phone: 555-0101-1001
+  email: internet.sales@goldengatehyundai.example
+  website: https://goldengatehyundai.example
+  persona: slow_responder
+  floor_price: 43940.0
+  knobs: {}
+  inventory:
+  - vin: D6G0BHG2NGU9W7PES
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: S5HJWLZJ4G3EYHCFK
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Hyundai
+  address: 134 Auto Row, Seattle, WA
+  distance_mi: 28.9
+  phone: 555-0102-1002
+  email: internet.sales@peninsulahyundai.example
+  website: https://peninsulahyundai.example
+  persona: hardball
+  floor_price: 44490.0
+  knobs: {}
+  inventory:
+  - vin: LBYK2YYXYKULSZ6MR
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: SXS5LUAEV4EJ8JYBG
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Hyundai
+  address: 151 Auto Row, Seattle, WA
+  distance_mi: 6.6
+  phone: 555-0103-1003
+  email: internet.sales@harborhyundai.example
+  website: https://harborhyundai.example
+  persona: come_on_in
+  floor_price: 43780.0
+  knobs:
+    visit_pushes: 3
+  inventory:
+  - vin: B158SKDHWL9UWCY4D
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: YCNSGULEXFDTHE77K
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Hyundai
+  address: 168 Auto Row, Seattle, WA
+  distance_mi: 34.4
+  phone: 555-0104-1004
+  email: internet.sales@summithyundai.example
+  website: https://summithyundai.example
+  persona: straight_shooter
+  floor_price: 44830.0
+  knobs:
+    opt_out: true
+  inventory:
+  - vin: UGB8Z3K8993KW9LUX
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: WW5753PYK6TBLHPHG
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Hyundai
+  address: 185 Auto Row, Seattle, WA
+  distance_mi: 46.9
+  phone: 555-0105-1005
+  email: internet.sales@valleyhyundai.example
+  website: https://valleyhyundai.example
+  persona: straight_shooter
+  floor_price: 44460.0
+  knobs: {}
+  inventory:
+  - vin: H2DMKGDCZAPCTBK7X
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: CJCD71JH8DRR4R3W5
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Hyundai
+  address: 202 Auto Row, Seattle, WA
+  distance_mi: 10.5
+  phone: 555-0106-1006
+  email: internet.sales@lakesidehyundai.example
+  website: https://lakesidehyundai.example
+  persona: slow_responder
+  floor_price: 44650.0
+  knobs: {}
+  inventory:
+  - vin: T5E9S6UTCJRSL0N5Y
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: EK1HELK4JFS481K7X
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Hyundai
+  address: 219 Auto Row, Seattle, WA
+  distance_mi: 4.6
+  phone: 555-0107-1007
+  email: internet.sales@metrohyundai.example
+  website: https://metrohyundai.example
+  persona: slow_responder
+  floor_price: 44670.0
+  knobs:
+    honesty: 0.5
+  inventory:
+  - vin: AYZZNA4TS8TS7DEMV
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: 7LP4W1CSA9G6MNTGN
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Hyundai
+  address: 236 Auto Row, Seattle, WA
+  distance_mi: 19.9
+  phone: 555-0108-1008
+  email: internet.sales@ridgehyundai.example
+  website: https://ridgehyundai.example
+  persona: hardball
+  floor_price: 44330.0
+  knobs: {}
+  inventory:
+  - vin: N91KFX0E1CED667GY
+    year: 2026
+    trim: SEL
+    color: Gray
+    options: []
+    msrp: 47400.0
+  - vin: RPDB8FWTDFWGRZL42
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Hyundai
+  address: 253 Auto Row, Seattle, WA
+  distance_mi: 2.9
+  phone: 555-0109-1009
+  email: internet.sales@coasthyundai.example
+  website: https://coasthyundai.example
+  persona: come_on_in
+  floor_price: 44040.0
+  knobs: {}
+  inventory:
+  - vin: 0BGE21L05NR0FET0U
+    year: 2026
+    trim: SEL
+    color: White
+    options: []
+    msrp: 47400.0
+  - vin: 615G4DJZ0PSKU4JZY
+    year: 2026
+    trim: SEL
+    color: Green
+    options:
+    - Tech package
+    msrp: 49200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: accept_same_trim
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- slow-market
+- 10-dealers
+- never-writes
+- opt-out
+- accept-substitutes
+- dishonest-final
+intake_answers: {}

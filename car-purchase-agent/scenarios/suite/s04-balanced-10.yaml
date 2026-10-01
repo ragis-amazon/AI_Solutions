@@ -1,0 +1,346 @@
+id: s04-balanced-10
+name: balanced / 10 dealers / v2
+description: Mazda CX-50 in FL, 10 dealers (balanced, 10-dealers, never-writes, opt-out, accept-substitutes, dishonest-final)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Mazda
+  model: CX-50
+  trims:
+  - 2.5 S Premium
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Red
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 42400.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '33101'
+  state: FL
+  radius_mi: 50.0
+market:
+  msrp: 37900.0
+  invoice: 35800.0
+  destination: 1420.0
+  incentives:
+  - name: Customer Cash
+    amount: 750.0
+    finance_conditional: false
+  tax_rate: 0.07
+  title_reg: 390.0
+  doc_fee_cap: null
+  typical_doc_fee: 899.0
+  supply: normal
+dealers:
+- id: d01
+  name: Bayside Mazda
+  address: 100 Auto Row, Miami, FL
+  distance_mi: 39.2
+  phone: 555-0100-1000
+  email: internet.sales@baysidemazda.example
+  website: https://baysidemazda.example
+  persona: bait_and_switch
+  floor_price: 35570.0
+  knobs: {}
+  inventory:
+  - vin: PYDK0E9SAKBJKF9X4
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: WBH4H7DVBSB1V5DM8
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Mazda
+  address: 117 Auto Row, Miami, FL
+  distance_mi: 37.0
+  phone: 555-0101-1001
+  email: internet.sales@goldengatemazda.example
+  website: https://goldengatemazda.example
+  persona: hardball
+  floor_price: 35650.0
+  knobs: {}
+  inventory:
+  - vin: 5LS6JM7MLB6KZBXKW
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 5184R84G573STRK4Z
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Mazda
+  address: 134 Auto Row, Miami, FL
+  distance_mi: 27.4
+  phone: 555-0102-1002
+  email: internet.sales@peninsulamazda.example
+  website: https://peninsulamazda.example
+  persona: slow_responder
+  floor_price: 35720.0
+  knobs: {}
+  inventory:
+  - vin: PUHHF18Y5J0AGXPUB
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: NX8CA3SZ4DCBPL9GW
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Mazda
+  address: 151 Auto Row, Miami, FL
+  distance_mi: 3.4
+  phone: 555-0103-1003
+  email: internet.sales@harbormazda.example
+  website: https://harbormazda.example
+  persona: fee_stuffer
+  floor_price: 36170.0
+  knobs: {}
+  inventory:
+  - vin: ST1USYMTRCAYNFX6E
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: JLRB9W5G8RUS3E0W9
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Mazda
+  address: 168 Auto Row, Miami, FL
+  distance_mi: 46.2
+  phone: 555-0104-1004
+  email: internet.sales@summitmazda.example
+  website: https://summitmazda.example
+  persona: come_on_in
+  floor_price: 36140.0
+  knobs:
+    visit_pushes: 3
+  inventory:
+  - vin: 5PSR836B1FG0ZA9MG
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 1WGJ25J83JWM0TPYD
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Mazda
+  address: 185 Auto Row, Miami, FL
+  distance_mi: 47.9
+  phone: 555-0105-1005
+  email: internet.sales@valleymazda.example
+  website: https://valleymazda.example
+  persona: anti_bot
+  floor_price: 35810.0
+  knobs: {}
+  inventory:
+  - vin: SNPSW2M4V4VBZPBD8
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: VFJH95207P6CADLB3
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Mazda
+  address: 202 Auto Row, Miami, FL
+  distance_mi: 31.3
+  phone: 555-0106-1006
+  email: internet.sales@lakesidemazda.example
+  website: https://lakesidemazda.example
+  persona: straight_shooter
+  floor_price: 35780.0
+  knobs:
+    opt_out: true
+  inventory:
+  - vin: MCPNU80JYN3C3N5F9
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: G6BC88PN45YBZZUCE
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Mazda
+  address: 219 Auto Row, Miami, FL
+  distance_mi: 20.8
+  phone: 555-0107-1007
+  email: internet.sales@metromazda.example
+  website: https://metromazda.example
+  persona: payment_packer
+  floor_price: 36020.0
+  knobs: {}
+  inventory:
+  - vin: M2SFANRNVS2YBHFKS
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: J4DS9E7HJHBX166UP
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Mazda
+  address: 236 Auto Row, Miami, FL
+  distance_mi: 10.2
+  phone: 555-0108-1008
+  email: internet.sales@ridgemazda.example
+  website: https://ridgemazda.example
+  persona: adm_gouger
+  floor_price: 35240.0
+  knobs: {}
+  inventory:
+  - vin: 3B47S6B546KU49ZD9
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 5N2AYYA7M2CNAN74A
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Mazda
+  address: 253 Auto Row, Miami, FL
+  distance_mi: 43.2
+  phone: 555-0109-1009
+  email: internet.sales@coastmazda.example
+  website: https://coastmazda.example
+  persona: exploding_offer
+  floor_price: 35370.0
+  knobs:
+    honesty: 0.5
+  inventory:
+  - vin: 7KZL9PKGG6DYPSLY7
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: LVXSUFFK59G4LZ2GE
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: accept_same_trim
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- balanced
+- 10-dealers
+- never-writes
+- opt-out
+- accept-substitutes
+- dishonest-final
+intake_answers: {}

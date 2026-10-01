@@ -1,0 +1,356 @@
+id: s15-hardball-10
+name: hardball / 10 dealers / v1
+description: Toyota RAV4 Hybrid in CA, 10 dealers (hardball, 10-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Toyota
+  model: RAV4 Hybrid
+  trims:
+  - XLE Premium
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - White
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 43600.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '94107'
+  state: CA
+  radius_mi: 50.0
+market:
+  msrp: 38900.0
+  invoice: 36600.0
+  destination: 1395.0
+  incentives: []
+  tax_rate: 0.09375
+  title_reg: 485.0
+  doc_fee_cap: 85.0
+  typical_doc_fee: 85.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Toyota
+  address: 100 Auto Row, San Francisco, CA
+  distance_mi: 20.0
+  phone: 555-0100-1000
+  email: internet.sales@baysidetoyota.example
+  website: https://baysidetoyota.example
+  persona: hardball
+  floor_price: 36540.0
+  knobs: {}
+  inventory:
+  - vin: 82U4W7AH3839YRRWC
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: R1HET4V5TYP3JGAMA
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 1
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Toyota
+  address: 117 Auto Row, San Francisco, CA
+  distance_mi: 36.2
+  phone: 555-0101-1001
+  email: internet.sales@goldengatetoyota.example
+  website: https://goldengatetoyota.example
+  persona: hardball
+  floor_price: 36430.0
+  knobs: {}
+  inventory:
+  - vin: RSC7JE7P171YJ4C4R
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: DBYK44CLJMMUTAYPN
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Toyota
+  address: 134 Auto Row, San Francisco, CA
+  distance_mi: 36.0
+  phone: 555-0102-1002
+  email: internet.sales@peninsulatoyota.example
+  website: https://peninsulatoyota.example
+  persona: hardball
+  floor_price: 37160.0
+  knobs: {}
+  inventory:
+  - vin: X58BUJBWV8BKE8ZU7
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: THB8FFJM03XEUES1P
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Toyota
+  address: 151 Auto Row, San Francisco, CA
+  distance_mi: 7.4
+  phone: 555-0103-1003
+  email: internet.sales@harbortoyota.example
+  website: https://harbortoyota.example
+  persona: hardball
+  floor_price: 37140.0
+  knobs: {}
+  inventory:
+  - vin: RV0XVV4MDBLTDDP06
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: S58Y9M8K7ZWSCF05S
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Toyota
+  address: 168 Auto Row, San Francisco, CA
+  distance_mi: 3.2
+  phone: 555-0104-1004
+  email: internet.sales@summittoyota.example
+  website: https://summittoyota.example
+  persona: hardball
+  floor_price: 36800.0
+  knobs: {}
+  inventory:
+  - vin: 6KPNLVU5RR9C7AZWC
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: 5ZC49GZDDXTFSEV66
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Toyota
+  address: 185 Auto Row, San Francisco, CA
+  distance_mi: 30.8
+  phone: 555-0105-1005
+  email: internet.sales@valleytoyota.example
+  website: https://valleytoyota.example
+  persona: hardball
+  floor_price: 37060.0
+  knobs: {}
+  inventory:
+  - vin: 4LBA56A9XYSFTJY0B
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: NC655R4AAVXCFURZX
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Toyota
+  address: 202 Auto Row, San Francisco, CA
+  distance_mi: 16.9
+  phone: 555-0106-1006
+  email: internet.sales@lakesidetoyota.example
+  website: https://lakesidetoyota.example
+  persona: hardball
+  floor_price: 37070.0
+  knobs: {}
+  inventory:
+  - vin: WPN2W1URG82HW7643
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: 14V50EW6LP9AUPSER
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Toyota
+  address: 219 Auto Row, San Francisco, CA
+  distance_mi: 44.0
+  phone: 555-0107-1007
+  email: internet.sales@metrotoyota.example
+  website: https://metrotoyota.example
+  persona: hardball
+  floor_price: 37410.0
+  knobs: {}
+  inventory:
+  - vin: WVRLD0MH7S80F3W7S
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: HZ92LHDA0Y021JFLW
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Toyota
+  address: 236 Auto Row, San Francisco, CA
+  distance_mi: 20.8
+  phone: 555-0108-1008
+  email: internet.sales@ridgetoyota.example
+  website: https://ridgetoyota.example
+  persona: hardball
+  floor_price: 37120.0
+  knobs: {}
+  inventory:
+  - vin: 3WBZBTTFRR2RVT8C7
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: K6JCJR9D64DCS178K
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Toyota
+  address: 253 Auto Row, San Francisco, CA
+  distance_mi: 6.0
+  phone: 555-0109-1009
+  email: internet.sales@coasttoyota.example
+  website: https://coasttoyota.example
+  persona: hardball
+  floor_price: 37160.0
+  knobs: {}
+  inventory:
+  - vin: RE3TZ1659T31X8RMM
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: 007BUE7J44D0EMX8N
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Outpost Toyota
+  address: 9 Rural Rd, San Francisco, CA
+  distance_mi: 44.0
+  phone: 555-0199-2000
+  email: null
+  website: null
+  persona: straight_shooter
+  floor_price: 36230.0
+  knobs: {}
+  inventory:
+  - vin: MCJ06AT87MHLMT3LL
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- hardball
+- 10-dealers
+intake_answers: {}

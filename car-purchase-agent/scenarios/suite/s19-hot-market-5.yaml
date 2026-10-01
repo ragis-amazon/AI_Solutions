@@ -1,0 +1,201 @@
+id: s19-hot-market-5
+name: hot-market / 5 dealers / v1
+description: Honda CR-V Hybrid in FL, 5 dealers (hot-market, 5-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Honda
+  model: CR-V Hybrid
+  trims:
+  - Sport-L
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Black
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 44600.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '33101'
+  state: FL
+  radius_mi: 50.0
+market:
+  msrp: 39850.0
+  invoice: 37500.0
+  destination: 1395.0
+  incentives: []
+  tax_rate: 0.07
+  title_reg: 390.0
+  doc_fee_cap: null
+  typical_doc_fee: 899.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Honda
+  address: 100 Auto Row, Miami, FL
+  distance_mi: 22.6
+  phone: 555-0100-1000
+  email: internet.sales@baysidehonda.example
+  website: https://baysidehonda.example
+  persona: adm_gouger
+  floor_price: 37350.0
+  knobs: {}
+  inventory:
+  - vin: GS5RV11VTRTGZ3DM5
+    year: 2026
+    trim: Sport-L
+    color: Black
+    options: []
+    msrp: 39850.0
+  - vin: V77CH8LN238L4DGVG
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Honda
+  address: 117 Auto Row, Miami, FL
+  distance_mi: 21.7
+  phone: 555-0101-1001
+  email: internet.sales@goldengatehonda.example
+  website: https://goldengatehonda.example
+  persona: exploding_offer
+  floor_price: 38000.0
+  knobs: {}
+  inventory:
+  - vin: VM3PV6P5NNR9HZBKH
+    year: 2026
+    trim: Sport-L
+    color: Black
+    options: []
+    msrp: 39850.0
+  - vin: 7DF94CC13TZV5J7B5
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Honda
+  address: 134 Auto Row, Miami, FL
+  distance_mi: 5.0
+  phone: 555-0102-1002
+  email: internet.sales@peninsulahonda.example
+  website: https://peninsulahonda.example
+  persona: adm_gouger
+  floor_price: 37600.0
+  knobs: {}
+  inventory:
+  - vin: Y8BATR73YUN1D8RHF
+    year: 2026
+    trim: Sport-L
+    color: Gray
+    options: []
+    msrp: 39850.0
+  - vin: UMVD0KKZW3VSXFA5W
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Honda
+  address: 151 Auto Row, Miami, FL
+  distance_mi: 38.2
+  phone: 555-0103-1003
+  email: internet.sales@harborhonda.example
+  website: https://harborhonda.example
+  persona: hardball
+  floor_price: 37500.0
+  knobs: {}
+  inventory:
+  - vin: UP81XL6GJ54ATS3UL
+    year: 2026
+    trim: Sport-L
+    color: Gray
+    options: []
+    msrp: 39850.0
+  - vin: UY06CVJYJU3LB01TK
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Honda
+  address: 168 Auto Row, Miami, FL
+  distance_mi: 18.8
+  phone: 555-0104-1004
+  email: internet.sales@summithonda.example
+  website: https://summithonda.example
+  persona: straight_shooter
+  floor_price: 37790.0
+  knobs: {}
+  inventory:
+  - vin: LFBKB69ARK8LA2DUF
+    year: 2026
+    trim: Sport-L
+    color: Black
+    options: []
+    msrp: 39850.0
+  - vin: 2J3RG67NRMA4JJMFW
+    year: 2026
+    trim: Sport-L
+    color: White
+    options:
+    - Tech package
+    msrp: 41650.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- hot-market
+- 5-dealers
+intake_answers: {}

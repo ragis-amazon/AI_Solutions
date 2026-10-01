@@ -1,0 +1,479 @@
+id: s06-balanced-15
+name: balanced / 15 dealers / v2
+description: Subaru Outback in TX, 15 dealers (balanced, 15-dealers, never-writes, opt-out, accept-substitutes)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Subaru
+  model: Outback
+  trims:
+  - Limited
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Blue
+  - Green
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 43000.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '78701'
+  state: TX
+  radius_mi: 50.0
+market:
+  msrp: 38400.0
+  invoice: 35900.0
+  destination: 1420.0
+  incentives:
+  - name: Loyalty Cash
+    amount: 1000.0
+    finance_conditional: false
+  tax_rate: 0.0625
+  title_reg: 320.0
+  doc_fee_cap: null
+  typical_doc_fee: 150.0
+  supply: slow
+dealers:
+- id: d01
+  name: Bayside Subaru
+  address: 100 Auto Row, Austin, TX
+  distance_mi: 46.4
+  phone: 555-0100-1000
+  email: internet.sales@baysidesubaru.example
+  website: https://baysidesubaru.example
+  persona: anti_bot
+  floor_price: 35220.0
+  knobs: {}
+  inventory:
+  - vin: 5APXAPWKE2BWAUDWA
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: CTVFF1A518ZX2G3M6
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Subaru
+  address: 117 Auto Row, Austin, TX
+  distance_mi: 9.9
+  phone: 555-0101-1001
+  email: internet.sales@goldengatesubaru.example
+  website: https://goldengatesubaru.example
+  persona: adm_gouger
+  floor_price: 35120.0
+  knobs: {}
+  inventory:
+  - vin: GNE1NLJ0FAF9D97Y0
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: KSC2FC865FX1DSX36
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Subaru
+  address: 134 Auto Row, Austin, TX
+  distance_mi: 38.5
+  phone: 555-0102-1002
+  email: internet.sales@peninsulasubaru.example
+  website: https://peninsulasubaru.example
+  persona: straight_shooter
+  floor_price: 35270.0
+  knobs:
+    opt_out: true
+  inventory:
+  - vin: E8GZ6APU8JWTLFHM2
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: EUAD1KMZTFK70BBM2
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Subaru
+  address: 151 Auto Row, Austin, TX
+  distance_mi: 18.9
+  phone: 555-0103-1003
+  email: internet.sales@harborsubaru.example
+  website: https://harborsubaru.example
+  persona: come_on_in
+  floor_price: 35690.0
+  knobs:
+    visit_pushes: 3
+  inventory:
+  - vin: 1Z3NRA6AVMD752JTR
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: 7XD8FGNVNL5LC2YCT
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Subaru
+  address: 168 Auto Row, Austin, TX
+  distance_mi: 8.9
+  phone: 555-0104-1004
+  email: internet.sales@summitsubaru.example
+  website: https://summitsubaru.example
+  persona: slow_responder
+  floor_price: 35060.0
+  knobs: {}
+  inventory:
+  - vin: PXNV65N169F4ZJ68D
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: 8E1C51WKU3993603K
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Subaru
+  address: 185 Auto Row, Austin, TX
+  distance_mi: 24.5
+  phone: 555-0105-1005
+  email: internet.sales@valleysubaru.example
+  website: https://valleysubaru.example
+  persona: adm_gouger
+  floor_price: 35720.0
+  knobs: {}
+  inventory:
+  - vin: 9EC65JNTHFKXGKBPN
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: 14ALENP11C91X9FVP
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Subaru
+  address: 202 Auto Row, Austin, TX
+  distance_mi: 12.1
+  phone: 555-0106-1006
+  email: internet.sales@lakesidesubaru.example
+  website: https://lakesidesubaru.example
+  persona: exploding_offer
+  floor_price: 35470.0
+  knobs: {}
+  inventory:
+  - vin: SGAZMGEL6938143L9
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: LTA9ELJ9ZPJF0212L
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Subaru
+  address: 219 Auto Row, Austin, TX
+  distance_mi: 41.9
+  phone: 555-0107-1007
+  email: internet.sales@metrosubaru.example
+  website: https://metrosubaru.example
+  persona: fee_stuffer
+  floor_price: 35170.0
+  knobs: {}
+  inventory:
+  - vin: GA3MB6P9B7LYUULR0
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: TJN8N9BCESY48YK8E
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Subaru
+  address: 236 Auto Row, Austin, TX
+  distance_mi: 39.6
+  phone: 555-0108-1008
+  email: internet.sales@ridgesubaru.example
+  website: https://ridgesubaru.example
+  persona: slow_responder
+  floor_price: 35220.0
+  knobs: {}
+  inventory:
+  - vin: SD3DEE30162X9WFK7
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: ZFD71SX24J6LXMHP9
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Subaru
+  address: 253 Auto Row, Austin, TX
+  distance_mi: 19.9
+  phone: 555-0109-1009
+  email: internet.sales@coastsubaru.example
+  website: https://coastsubaru.example
+  persona: come_on_in
+  floor_price: 35530.0
+  knobs: {}
+  inventory:
+  - vin: 4E521BBYV02RADE3N
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: 6325U5KAWJZCRY939
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Pioneer Subaru
+  address: 270 Auto Row, Austin, TX
+  distance_mi: 7.3
+  phone: 555-0110-1010
+  email: internet.sales@pioneersubaru.example
+  website: https://pioneersubaru.example
+  persona: payment_packer
+  floor_price: 35200.0
+  knobs: {}
+  inventory:
+  - vin: 22J91912UG85TEJS7
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: YH8NXYC3XV8NHA18D
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d12
+  name: Redwood Subaru
+  address: 287 Auto Row, Austin, TX
+  distance_mi: 27.0
+  phone: 555-0111-1011
+  email: internet.sales@redwoodsubaru.example
+  website: https://redwoodsubaru.example
+  persona: hardball
+  floor_price: 35860.0
+  knobs: {}
+  inventory:
+  - vin: A8SJS8YZ9VGANKCX2
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: 9KCS106F9UEXBFG0P
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d13
+  name: Crossroads Subaru
+  address: 304 Auto Row, Austin, TX
+  distance_mi: 8.6
+  phone: 555-0112-1012
+  email: internet.sales@crossroadssubaru.example
+  website: https://crossroadssubaru.example
+  persona: payment_packer
+  floor_price: 35410.0
+  knobs: {}
+  inventory:
+  - vin: A76L29NS0GGVT65NG
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: L4P9UEJ65J2DXJTM3
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d14
+  name: Mission Subaru
+  address: 321 Auto Row, Austin, TX
+  distance_mi: 47.1
+  phone: 555-0113-1013
+  email: internet.sales@missionsubaru.example
+  website: https://missionsubaru.example
+  persona: fee_stuffer
+  floor_price: 35680.0
+  knobs: {}
+  inventory:
+  - vin: PS2CUXZ6Z0ECN16XV
+    year: 2026
+    trim: Limited
+    color: Green
+    options: []
+    msrp: 38400.0
+  - vin: VMRK3C61P2YN60SRP
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d15
+  name: Northgate Subaru
+  address: 338 Auto Row, Austin, TX
+  distance_mi: 11.1
+  phone: 555-0114-1014
+  email: internet.sales@northgatesubaru.example
+  website: https://northgatesubaru.example
+  persona: bait_and_switch
+  floor_price: 34970.0
+  knobs: {}
+  inventory:
+  - vin: 9Y8V6DHH7UA14Z6FP
+    year: 2026
+    trim: Limited
+    color: Blue
+    options: []
+    msrp: 38400.0
+  - vin: PG9CH7RFFR1RS644H
+    year: 2026
+    trim: Limited
+    color: Silver
+    options:
+    - Tech package
+    msrp: 40200.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: accept_same_trim
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- balanced
+- 15-dealers
+- never-writes
+- opt-out
+- accept-substitutes
+intake_answers: {}

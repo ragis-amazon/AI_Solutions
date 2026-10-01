@@ -1,0 +1,336 @@
+id: s21-hot-market-10
+name: hot-market / 10 dealers / v1
+description: Toyota RAV4 Hybrid in TX, 10 dealers (hot-market, 10-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Toyota
+  model: RAV4 Hybrid
+  trims:
+  - XLE Premium
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - White
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 43600.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '78701'
+  state: TX
+  radius_mi: 50.0
+market:
+  msrp: 38900.0
+  invoice: 36600.0
+  destination: 1395.0
+  incentives: []
+  tax_rate: 0.0625
+  title_reg: 320.0
+  doc_fee_cap: null
+  typical_doc_fee: 150.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Toyota
+  address: 100 Auto Row, Austin, TX
+  distance_mi: 15.3
+  phone: 555-0100-1000
+  email: internet.sales@baysidetoyota.example
+  website: https://baysidetoyota.example
+  persona: adm_gouger
+  floor_price: 37040.0
+  knobs: {}
+  inventory:
+  - vin: ST343YGG6TM4BXAR7
+    year: 2026
+    trim: XLE Premium
+    color: White
+    options: []
+    msrp: 38900.0
+  - vin: Z8GSZ01652BBK5GD9
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Toyota
+  address: 117 Auto Row, Austin, TX
+  distance_mi: 26.8
+  phone: 555-0101-1001
+  email: internet.sales@goldengatetoyota.example
+  website: https://goldengatetoyota.example
+  persona: exploding_offer
+  floor_price: 37400.0
+  knobs: {}
+  inventory:
+  - vin: PL88B64F2XFFEX2NE
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: 93UBNHY2H1LZJGB8P
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Toyota
+  address: 134 Auto Row, Austin, TX
+  distance_mi: 39.3
+  phone: 555-0102-1002
+  email: internet.sales@peninsulatoyota.example
+  website: https://peninsulatoyota.example
+  persona: adm_gouger
+  floor_price: 36790.0
+  knobs: {}
+  inventory:
+  - vin: RKGDG6G38FSZ1CLFB
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: NDKZAPV0MDTCRRHGR
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Toyota
+  address: 151 Auto Row, Austin, TX
+  distance_mi: 31.0
+  phone: 555-0103-1003
+  email: internet.sales@harbortoyota.example
+  website: https://harbortoyota.example
+  persona: hardball
+  floor_price: 36910.0
+  knobs: {}
+  inventory:
+  - vin: 7C3WZ82YU68A5M8UW
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: 7RH6JBU2DR2DHED4S
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Toyota
+  address: 168 Auto Row, Austin, TX
+  distance_mi: 45.8
+  phone: 555-0104-1004
+  email: internet.sales@summittoyota.example
+  website: https://summittoyota.example
+  persona: straight_shooter
+  floor_price: 37450.0
+  knobs: {}
+  inventory:
+  - vin: CN0YCJLKCSHZAAZTG
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: DDKT1BK6SCAZB6YDP
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Toyota
+  address: 185 Auto Row, Austin, TX
+  distance_mi: 8.9
+  phone: 555-0105-1005
+  email: internet.sales@valleytoyota.example
+  website: https://valleytoyota.example
+  persona: come_on_in
+  floor_price: 36730.0
+  knobs: {}
+  inventory:
+  - vin: 2GA1NW6JUG3M4ZU89
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: 0LRCF392NHSYS5JDT
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Toyota
+  address: 202 Auto Row, Austin, TX
+  distance_mi: 19.4
+  phone: 555-0106-1006
+  email: internet.sales@lakesidetoyota.example
+  website: https://lakesidetoyota.example
+  persona: adm_gouger
+  floor_price: 37210.0
+  knobs: {}
+  inventory:
+  - vin: 85RLDG4FE18T0LWC1
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: 7CSRXTXKTSR4N8ULK
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Toyota
+  address: 219 Auto Row, Austin, TX
+  distance_mi: 23.7
+  phone: 555-0107-1007
+  email: internet.sales@metrotoyota.example
+  website: https://metrotoyota.example
+  persona: exploding_offer
+  floor_price: 37450.0
+  knobs: {}
+  inventory:
+  - vin: WJLA577A3DXMV3DM0
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: DDJX1S9SHE64TGCCS
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Toyota
+  address: 236 Auto Row, Austin, TX
+  distance_mi: 35.5
+  phone: 555-0108-1008
+  email: internet.sales@ridgetoyota.example
+  website: https://ridgetoyota.example
+  persona: adm_gouger
+  floor_price: 36850.0
+  knobs: {}
+  inventory:
+  - vin: 3XTXUGVWVVG1GLSFT
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: A2EGGYLTUZARW9C3R
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Toyota
+  address: 253 Auto Row, Austin, TX
+  distance_mi: 15.5
+  phone: 555-0109-1009
+  email: internet.sales@coasttoyota.example
+  website: https://coasttoyota.example
+  persona: hardball
+  floor_price: 36450.0
+  knobs: {}
+  inventory:
+  - vin: YZY92TM1RJHRH3TGF
+    year: 2026
+    trim: XLE Premium
+    color: Gray
+    options: []
+    msrp: 38900.0
+  - vin: Z8E72PJ7GAZWL77XM
+    year: 2026
+    trim: XLE Premium
+    color: Blue
+    options:
+    - Tech package
+    msrp: 40700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- hot-market
+- 10-dealers
+intake_answers: {}

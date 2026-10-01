@@ -1,0 +1,474 @@
+id: s11-fee-heavy-15
+name: fee-heavy / 15 dealers / v1
+description: Mazda CX-50 in TX, 15 dealers (fee-heavy, 15-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Mazda
+  model: CX-50
+  trims:
+  - 2.5 S Premium
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Red
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 42400.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '78701'
+  state: TX
+  radius_mi: 50.0
+market:
+  msrp: 37900.0
+  invoice: 35800.0
+  destination: 1420.0
+  incentives:
+  - name: Customer Cash
+    amount: 750.0
+    finance_conditional: false
+  tax_rate: 0.0625
+  title_reg: 320.0
+  doc_fee_cap: null
+  typical_doc_fee: 150.0
+  supply: normal
+dealers:
+- id: d01
+  name: Bayside Mazda
+  address: 100 Auto Row, Austin, TX
+  distance_mi: 8.9
+  phone: 555-0100-1000
+  email: internet.sales@baysidemazda.example
+  website: https://baysidemazda.example
+  persona: fee_stuffer
+  floor_price: 35500.0
+  knobs: {}
+  inventory:
+  - vin: 3M5259TMH6V1HZPF4
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: Z7B7LAULGT5RT7J8F
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Mazda
+  address: 117 Auto Row, Austin, TX
+  distance_mi: 17.7
+  phone: 555-0101-1001
+  email: internet.sales@goldengatemazda.example
+  website: https://goldengatemazda.example
+  persona: adm_gouger
+  floor_price: 35310.0
+  knobs: {}
+  inventory:
+  - vin: MG974DML0JJK0KCNU
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: TNTCT5ERNWLJM85W5
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Mazda
+  address: 134 Auto Row, Austin, TX
+  distance_mi: 7.0
+  phone: 555-0102-1002
+  email: internet.sales@peninsulamazda.example
+  website: https://peninsulamazda.example
+  persona: payment_packer
+  floor_price: 35470.0
+  knobs: {}
+  inventory:
+  - vin: B8GFFKUPC93XPRLXX
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 5J5M67LCKXL3SF0VX
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Mazda
+  address: 151 Auto Row, Austin, TX
+  distance_mi: 35.0
+  phone: 555-0103-1003
+  email: internet.sales@harbormazda.example
+  website: https://harbormazda.example
+  persona: fee_stuffer
+  floor_price: 35790.0
+  knobs: {}
+  inventory:
+  - vin: XDEMXVJ7B4H3CMTW9
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 0KXTSJ2AER48UW0GD
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Mazda
+  address: 168 Auto Row, Austin, TX
+  distance_mi: 22.0
+  phone: 555-0104-1004
+  email: internet.sales@summitmazda.example
+  website: https://summitmazda.example
+  persona: straight_shooter
+  floor_price: 36160.0
+  knobs: {}
+  inventory:
+  - vin: 6Z14M0K9ADH0SCUH8
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: H1UXAGATXW5F65V4E
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Mazda
+  address: 185 Auto Row, Austin, TX
+  distance_mi: 47.5
+  phone: 555-0105-1005
+  email: internet.sales@valleymazda.example
+  website: https://valleymazda.example
+  persona: bait_and_switch
+  floor_price: 35920.0
+  knobs: {}
+  inventory:
+  - vin: KFE2K1V75H1ARFXPA
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: UM4PRDY1KPMXNWS8X
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Mazda
+  address: 202 Auto Row, Austin, TX
+  distance_mi: 31.9
+  phone: 555-0106-1006
+  email: internet.sales@lakesidemazda.example
+  website: https://lakesidemazda.example
+  persona: fee_stuffer
+  floor_price: 36000.0
+  knobs: {}
+  inventory:
+  - vin: 2VF2BDG7W8S43DB5M
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 2N5P3E7RS98HXUWRX
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Mazda
+  address: 219 Auto Row, Austin, TX
+  distance_mi: 34.6
+  phone: 555-0107-1007
+  email: internet.sales@metromazda.example
+  website: https://metromazda.example
+  persona: adm_gouger
+  floor_price: 36080.0
+  knobs: {}
+  inventory:
+  - vin: CEKX5M99GXTSRVX6E
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: X1THNBJBFFTH2EFX5
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Mazda
+  address: 236 Auto Row, Austin, TX
+  distance_mi: 26.4
+  phone: 555-0108-1008
+  email: internet.sales@ridgemazda.example
+  website: https://ridgemazda.example
+  persona: payment_packer
+  floor_price: 36110.0
+  knobs: {}
+  inventory:
+  - vin: FXA72C6LG0YBFGN92
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: VGT3EAX3PBPXLSEA5
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Mazda
+  address: 253 Auto Row, Austin, TX
+  distance_mi: 46.7
+  phone: 555-0109-1009
+  email: internet.sales@coastmazda.example
+  website: https://coastmazda.example
+  persona: fee_stuffer
+  floor_price: 35220.0
+  knobs: {}
+  inventory:
+  - vin: PZN3C03F4CUCJUSZ1
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 9JRZ6SMBT8FSPN1K4
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Pioneer Mazda
+  address: 270 Auto Row, Austin, TX
+  distance_mi: 34.6
+  phone: 555-0110-1010
+  email: internet.sales@pioneermazda.example
+  website: https://pioneermazda.example
+  persona: straight_shooter
+  floor_price: 36090.0
+  knobs: {}
+  inventory:
+  - vin: 1GAFMTESARL3G6GR9
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: PNH758KNR0F9Y50L7
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d12
+  name: Redwood Mazda
+  address: 287 Auto Row, Austin, TX
+  distance_mi: 30.4
+  phone: 555-0111-1011
+  email: internet.sales@redwoodmazda.example
+  website: https://redwoodmazda.example
+  persona: bait_and_switch
+  floor_price: 36100.0
+  knobs: {}
+  inventory:
+  - vin: 1MG3R0M5XMXR1S9G2
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 7BFM0P68TG4RWETNX
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d13
+  name: Crossroads Mazda
+  address: 304 Auto Row, Austin, TX
+  distance_mi: 5.7
+  phone: 555-0112-1012
+  email: internet.sales@crossroadsmazda.example
+  website: https://crossroadsmazda.example
+  persona: fee_stuffer
+  floor_price: 35200.0
+  knobs: {}
+  inventory:
+  - vin: 08M3M6XFPB5PK1XEM
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: RPKT67AR58PPWERDP
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d14
+  name: Mission Mazda
+  address: 321 Auto Row, Austin, TX
+  distance_mi: 27.7
+  phone: 555-0113-1013
+  email: internet.sales@missionmazda.example
+  website: https://missionmazda.example
+  persona: adm_gouger
+  floor_price: 35620.0
+  knobs: {}
+  inventory:
+  - vin: 2U8TFYGVYPSMD8FLC
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 185H6Z7YR73ZYW646
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d15
+  name: Northgate Mazda
+  address: 338 Auto Row, Austin, TX
+  distance_mi: 36.8
+  phone: 555-0114-1014
+  email: internet.sales@northgatemazda.example
+  website: https://northgatemazda.example
+  persona: payment_packer
+  floor_price: 35570.0
+  knobs: {}
+  inventory:
+  - vin: D2RM390EPB79B5S5J
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 9RSGRLV17MFBX15Z6
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- fee-heavy
+- 15-dealers
+intake_answers: {}

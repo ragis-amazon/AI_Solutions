@@ -1,0 +1,471 @@
+id: s23-hot-market-15
+name: hot-market / 15 dealers / v1
+description: Kia Telluride in WA, 15 dealers (hot-market, 15-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Kia
+  model: Telluride
+  trims:
+  - SX
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Black
+  - White
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 52400.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '98101'
+  state: WA
+  radius_mi: 50.0
+market:
+  msrp: 46800.0
+  invoice: 44300.0
+  destination: 1445.0
+  incentives: []
+  tax_rate: 0.1025
+  title_reg: 520.0
+  doc_fee_cap: 200.0
+  typical_doc_fee: 200.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Kia
+  address: 100 Auto Row, Seattle, WA
+  distance_mi: 28.8
+  phone: 555-0100-1000
+  email: internet.sales@baysidekia.example
+  website: https://baysidekia.example
+  persona: adm_gouger
+  floor_price: 44770.0
+  knobs: {}
+  inventory:
+  - vin: 7J4WA3Z0023UEU6G9
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: LN9PGYTX61Y7P5H6W
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Kia
+  address: 117 Auto Row, Seattle, WA
+  distance_mi: 17.9
+  phone: 555-0101-1001
+  email: internet.sales@goldengatekia.example
+  website: https://goldengatekia.example
+  persona: exploding_offer
+  floor_price: 44780.0
+  knobs: {}
+  inventory:
+  - vin: 63NYRDRB17RK2K40X
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: U5LJH4YZ0NDRW65VZ
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Kia
+  address: 134 Auto Row, Seattle, WA
+  distance_mi: 42.5
+  phone: 555-0102-1002
+  email: internet.sales@peninsulakia.example
+  website: https://peninsulakia.example
+  persona: adm_gouger
+  floor_price: 45220.0
+  knobs: {}
+  inventory:
+  - vin: 3KCVEH0FCB3CPR29J
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: L0ASCL56B9HTDUVYB
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Kia
+  address: 151 Auto Row, Seattle, WA
+  distance_mi: 31.7
+  phone: 555-0103-1003
+  email: internet.sales@harborkia.example
+  website: https://harborkia.example
+  persona: hardball
+  floor_price: 44540.0
+  knobs: {}
+  inventory:
+  - vin: 56X5L636K07TUL5N8
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: 2YXEFH6R4M445TWZK
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Kia
+  address: 168 Auto Row, Seattle, WA
+  distance_mi: 22.6
+  phone: 555-0104-1004
+  email: internet.sales@summitkia.example
+  website: https://summitkia.example
+  persona: straight_shooter
+  floor_price: 45490.0
+  knobs: {}
+  inventory:
+  - vin: HG180MUHSNX4YK9F8
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: CM4PHT91G0UVP3CY7
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Kia
+  address: 185 Auto Row, Seattle, WA
+  distance_mi: 21.2
+  phone: 555-0105-1005
+  email: internet.sales@valleykia.example
+  website: https://valleykia.example
+  persona: come_on_in
+  floor_price: 44650.0
+  knobs: {}
+  inventory:
+  - vin: MNZJGN1UDJ1GP0GCF
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: ZDEG4HCJPLFCHLBAN
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Kia
+  address: 202 Auto Row, Seattle, WA
+  distance_mi: 15.2
+  phone: 555-0106-1006
+  email: internet.sales@lakesidekia.example
+  website: https://lakesidekia.example
+  persona: adm_gouger
+  floor_price: 45200.0
+  knobs: {}
+  inventory:
+  - vin: 5TG0DKR0TF2C80L3U
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: TZ9GB85AY3HYDEPWD
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Kia
+  address: 219 Auto Row, Seattle, WA
+  distance_mi: 41.1
+  phone: 555-0107-1007
+  email: internet.sales@metrokia.example
+  website: https://metrokia.example
+  persona: exploding_offer
+  floor_price: 45450.0
+  knobs: {}
+  inventory:
+  - vin: KC8L45U1E7NNYTDXU
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: PZK9TWR9FN7BG91J7
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Kia
+  address: 236 Auto Row, Seattle, WA
+  distance_mi: 12.0
+  phone: 555-0108-1008
+  email: internet.sales@ridgekia.example
+  website: https://ridgekia.example
+  persona: adm_gouger
+  floor_price: 45040.0
+  knobs: {}
+  inventory:
+  - vin: FALE4VP0TVX5D9445
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: 5SG1NEACUWRZHEJPX
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Kia
+  address: 253 Auto Row, Seattle, WA
+  distance_mi: 5.0
+  phone: 555-0109-1009
+  email: internet.sales@coastkia.example
+  website: https://coastkia.example
+  persona: hardball
+  floor_price: 44370.0
+  knobs: {}
+  inventory:
+  - vin: B6C7MUUMSL73E5BRN
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: 8GR7Y2NHUEL76JWZW
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Pioneer Kia
+  address: 270 Auto Row, Seattle, WA
+  distance_mi: 28.4
+  phone: 555-0110-1010
+  email: internet.sales@pioneerkia.example
+  website: https://pioneerkia.example
+  persona: straight_shooter
+  floor_price: 45000.0
+  knobs: {}
+  inventory:
+  - vin: WYBRJDG0FSSG129GX
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: 4B0G8G0J38KYDS16T
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d12
+  name: Redwood Kia
+  address: 287 Auto Row, Seattle, WA
+  distance_mi: 20.4
+  phone: 555-0111-1011
+  email: internet.sales@redwoodkia.example
+  website: https://redwoodkia.example
+  persona: come_on_in
+  floor_price: 44970.0
+  knobs: {}
+  inventory:
+  - vin: JE7R4E31W8Y7UBYAA
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: Y3JNHCDK50HB6YCXT
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d13
+  name: Crossroads Kia
+  address: 304 Auto Row, Seattle, WA
+  distance_mi: 20.0
+  phone: 555-0112-1012
+  email: internet.sales@crossroadskia.example
+  website: https://crossroadskia.example
+  persona: adm_gouger
+  floor_price: 44180.0
+  knobs: {}
+  inventory:
+  - vin: 6FB7H54MSMD9F3ATU
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: BCZJK6TSKZS5L35BW
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d14
+  name: Mission Kia
+  address: 321 Auto Row, Seattle, WA
+  distance_mi: 25.2
+  phone: 555-0113-1013
+  email: internet.sales@missionkia.example
+  website: https://missionkia.example
+  persona: exploding_offer
+  floor_price: 45190.0
+  knobs: {}
+  inventory:
+  - vin: 6YD48A62JG24ZVSB1
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: UFAW171S19VNDM9CA
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d15
+  name: Northgate Kia
+  address: 338 Auto Row, Seattle, WA
+  distance_mi: 10.7
+  phone: 555-0114-1014
+  email: internet.sales@northgatekia.example
+  website: https://northgatekia.example
+  persona: adm_gouger
+  floor_price: 45390.0
+  knobs: {}
+  inventory:
+  - vin: FDTKT1XE1DSSD8M8K
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: RZVMF5B52DGBP2TKR
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- hot-market
+- 15-dealers
+intake_answers: {}

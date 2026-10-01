@@ -1,0 +1,491 @@
+id: s05-balanced-15
+name: balanced / 15 dealers / v1
+description: Kia Telluride in CA, 15 dealers (balanced, 15-dealers)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Kia
+  model: Telluride
+  trims:
+  - SX
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Black
+  - White
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 52400.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '94107'
+  state: CA
+  radius_mi: 50.0
+market:
+  msrp: 46800.0
+  invoice: 44300.0
+  destination: 1445.0
+  incentives: []
+  tax_rate: 0.09375
+  title_reg: 485.0
+  doc_fee_cap: 85.0
+  typical_doc_fee: 85.0
+  supply: hot
+dealers:
+- id: d01
+  name: Bayside Kia
+  address: 100 Auto Row, San Francisco, CA
+  distance_mi: 25.4
+  phone: 555-0100-1000
+  email: internet.sales@baysidekia.example
+  website: https://baysidekia.example
+  persona: adm_gouger
+  floor_price: 44760.0
+  knobs: {}
+  inventory:
+  - vin: 3WZM8HX0PCCWDY8GT
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: RFVH7P2ZDUWU3765Y
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 1
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Kia
+  address: 117 Auto Row, San Francisco, CA
+  distance_mi: 5.3
+  phone: 555-0101-1001
+  email: internet.sales@goldengatekia.example
+  website: https://goldengatekia.example
+  persona: straight_shooter
+  floor_price: 44480.0
+  knobs: {}
+  inventory:
+  - vin: B02V0N6KCA6BCPJ5E
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: S67NYLRLV16Z7C44S
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Kia
+  address: 134 Auto Row, San Francisco, CA
+  distance_mi: 14.3
+  phone: 555-0102-1002
+  email: internet.sales@peninsulakia.example
+  website: https://peninsulakia.example
+  persona: straight_shooter
+  floor_price: 44730.0
+  knobs: {}
+  inventory:
+  - vin: RP2R1N0D4THXBCGJ5
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: 1DP7Z4X5MW9MEKMFX
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Kia
+  address: 151 Auto Row, San Francisco, CA
+  distance_mi: 33.7
+  phone: 555-0103-1003
+  email: internet.sales@harborkia.example
+  website: https://harborkia.example
+  persona: come_on_in
+  floor_price: 45410.0
+  knobs: {}
+  inventory:
+  - vin: U6RFKT62Y4R23XEPN
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: 1VAA1F1CY7Z6X9WGW
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Kia
+  address: 168 Auto Row, San Francisco, CA
+  distance_mi: 37.6
+  phone: 555-0104-1004
+  email: internet.sales@summitkia.example
+  website: https://summitkia.example
+  persona: fee_stuffer
+  floor_price: 44250.0
+  knobs: {}
+  inventory:
+  - vin: E3XK0U49NM2MY66XR
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: B32YJE5P362LNSBM0
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Kia
+  address: 185 Auto Row, San Francisco, CA
+  distance_mi: 9.7
+  phone: 555-0105-1005
+  email: internet.sales@valleykia.example
+  website: https://valleykia.example
+  persona: payment_packer
+  floor_price: 45440.0
+  knobs: {}
+  inventory:
+  - vin: 3YNAWR48GHEM9SDAK
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: NV37SZ8ACHKSA4EDB
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Kia
+  address: 202 Auto Row, San Francisco, CA
+  distance_mi: 13.4
+  phone: 555-0106-1006
+  email: internet.sales@lakesidekia.example
+  website: https://lakesidekia.example
+  persona: fee_stuffer
+  floor_price: 44770.0
+  knobs: {}
+  inventory:
+  - vin: HDT4457V6MSVTBXD7
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: F40T74F1PE7X9VX4X
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Kia
+  address: 219 Auto Row, San Francisco, CA
+  distance_mi: 29.5
+  phone: 555-0107-1007
+  email: internet.sales@metrokia.example
+  website: https://metrokia.example
+  persona: slow_responder
+  floor_price: 44790.0
+  knobs: {}
+  inventory:
+  - vin: HPS03HTPNSME483R3
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: YNZECYFMLHKA4YWEM
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Kia
+  address: 236 Auto Row, San Francisco, CA
+  distance_mi: 35.0
+  phone: 555-0108-1008
+  email: internet.sales@ridgekia.example
+  website: https://ridgekia.example
+  persona: payment_packer
+  floor_price: 44390.0
+  knobs: {}
+  inventory:
+  - vin: R52J220LEJR6N0VHR
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: H72K9W3EZ2ZU8821B
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Kia
+  address: 253 Auto Row, San Francisco, CA
+  distance_mi: 10.6
+  phone: 555-0109-1009
+  email: internet.sales@coastkia.example
+  website: https://coastkia.example
+  persona: anti_bot
+  floor_price: 44670.0
+  knobs: {}
+  inventory:
+  - vin: RFP44JR9T2EVB2HCR
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: J6TBXH2H1Y3BY7TBE
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Pioneer Kia
+  address: 270 Auto Row, San Francisco, CA
+  distance_mi: 22.6
+  phone: 555-0110-1010
+  email: internet.sales@pioneerkia.example
+  website: https://pioneerkia.example
+  persona: come_on_in
+  floor_price: 45330.0
+  knobs: {}
+  inventory:
+  - vin: 9M52W1EB1ABU91JLZ
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: DWCBFH7EUH9WC3R9X
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d12
+  name: Redwood Kia
+  address: 287 Auto Row, San Francisco, CA
+  distance_mi: 13.0
+  phone: 555-0111-1011
+  email: internet.sales@redwoodkia.example
+  website: https://redwoodkia.example
+  persona: hardball
+  floor_price: 45460.0
+  knobs: {}
+  inventory:
+  - vin: 79U3NL1DF5TTE6S6E
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: 3XXSFKG0VNRZ71035
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d13
+  name: Crossroads Kia
+  address: 304 Auto Row, San Francisco, CA
+  distance_mi: 44.4
+  phone: 555-0112-1012
+  email: internet.sales@crossroadskia.example
+  website: https://crossroadskia.example
+  persona: bait_and_switch
+  floor_price: 45320.0
+  knobs: {}
+  inventory:
+  - vin: WAEPE47G7PJ375JVJ
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: 7HW5H2NYWN3EH9J07
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d14
+  name: Mission Kia
+  address: 321 Auto Row, San Francisco, CA
+  distance_mi: 31.7
+  phone: 555-0113-1013
+  email: internet.sales@missionkia.example
+  website: https://missionkia.example
+  persona: adm_gouger
+  floor_price: 45180.0
+  knobs: {}
+  inventory:
+  - vin: BNNHWJB48DJL96DNP
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  - vin: M5NCLE9BUUMGW1E80
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d15
+  name: Northgate Kia
+  address: 338 Auto Row, San Francisco, CA
+  distance_mi: 9.0
+  phone: 555-0114-1014
+  email: internet.sales@northgatekia.example
+  website: https://northgatekia.example
+  persona: exploding_offer
+  floor_price: 44370.0
+  knobs: {}
+  inventory:
+  - vin: BZ02ZHL6V9RT8TT96
+    year: 2026
+    trim: SX
+    color: White
+    options: []
+    msrp: 46800.0
+  - vin: RVRAVYT00XYB2JBGV
+    year: 2026
+    trim: SX
+    color: Green
+    options:
+    - Tech package
+    msrp: 48600.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d16
+  name: Outpost Kia
+  address: 9 Rural Rd, San Francisco, CA
+  distance_mi: 44.0
+  phone: 555-0199-2000
+  email: null
+  website: null
+  persona: straight_shooter
+  floor_price: 43860.0
+  knobs: {}
+  inventory:
+  - vin: 0CA04KJX5TUETKPKN
+    year: 2026
+    trim: SX
+    color: Black
+    options: []
+    msrp: 46800.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: reject
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- balanced
+- 15-dealers
+intake_answers: {}

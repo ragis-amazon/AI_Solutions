@@ -1,0 +1,475 @@
+id: s18-hardball-15
+name: hardball / 15 dealers / v2
+description: Mazda CX-50 in WA, 15 dealers (hardball, 15-dealers, accept-substitutes)
+start: '2026-10-05T08:00:00'
+buyer:
+  first_name: Sham
+  last_name: Castellano
+  phone: 415-555-0142
+  email: sham.castellano@example.com
+  street_address: 742 Evergreen Terrace
+  assistant_name: Riley
+spec:
+  make: Mazda
+  model: CX-50
+  trims:
+  - 2.5 S Premium
+  years:
+  - 2026
+  condition: new
+  colors_ok:
+  - Red
+  - Gray
+  colors_no: []
+  must_haves: []
+  nice_to_haves:
+  - Tech package
+  max_miles: null
+  budget_otd_max: 42400.0
+  timeline_by: '2026-10-31'
+  payment_type: cash
+  preapproval_apr: null
+  zip: '98101'
+  state: WA
+  radius_mi: 50.0
+market:
+  msrp: 37900.0
+  invoice: 35800.0
+  destination: 1420.0
+  incentives:
+  - name: Customer Cash
+    amount: 750.0
+    finance_conditional: false
+  tax_rate: 0.1025
+  title_reg: 520.0
+  doc_fee_cap: 200.0
+  typical_doc_fee: 200.0
+  supply: normal
+dealers:
+- id: d01
+  name: Bayside Mazda
+  address: 100 Auto Row, Seattle, WA
+  distance_mi: 33.0
+  phone: 555-0100-1000
+  email: internet.sales@baysidemazda.example
+  website: https://baysidemazda.example
+  persona: hardball
+  floor_price: 35540.0
+  knobs: {}
+  inventory:
+  - vin: GRXRM3PH1MK1D4K10
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: GNDXX88TA0KCYHKM4
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d02
+  name: Golden Gate Mazda
+  address: 117 Auto Row, Seattle, WA
+  distance_mi: 13.0
+  phone: 555-0101-1001
+  email: internet.sales@goldengatemazda.example
+  website: https://goldengatemazda.example
+  persona: hardball
+  floor_price: 35090.0
+  knobs: {}
+  inventory:
+  - vin: L2LBJWSL8NCP7V7JB
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 5HD8PEXU30RNZGJET
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d03
+  name: Peninsula Mazda
+  address: 134 Auto Row, Seattle, WA
+  distance_mi: 41.3
+  phone: 555-0102-1002
+  email: internet.sales@peninsulamazda.example
+  website: https://peninsulamazda.example
+  persona: hardball
+  floor_price: 35840.0
+  knobs: {}
+  inventory:
+  - vin: EGEVA1T9C5UPST41T
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: HTP7043FB7BK5FSA1
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d04
+  name: Harbor Mazda
+  address: 151 Auto Row, Seattle, WA
+  distance_mi: 44.2
+  phone: 555-0103-1003
+  email: internet.sales@harbormazda.example
+  website: https://harbormazda.example
+  persona: hardball
+  floor_price: 36040.0
+  knobs: {}
+  inventory:
+  - vin: JVMPLKTH2ZPTZ6ZHF
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: SJPZEJ941B735G2FD
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d05
+  name: Summit Mazda
+  address: 168 Auto Row, Seattle, WA
+  distance_mi: 44.5
+  phone: 555-0104-1004
+  email: internet.sales@summitmazda.example
+  website: https://summitmazda.example
+  persona: hardball
+  floor_price: 36150.0
+  knobs: {}
+  inventory:
+  - vin: P8TDD7Y4LUTXJK8YD
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: D7VNJDEP6RU9LJBHY
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d06
+  name: Valley Mazda
+  address: 185 Auto Row, Seattle, WA
+  distance_mi: 34.7
+  phone: 555-0105-1005
+  email: internet.sales@valleymazda.example
+  website: https://valleymazda.example
+  persona: hardball
+  floor_price: 35980.0
+  knobs: {}
+  inventory:
+  - vin: 4VRB09664WU79L7EG
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 5RWVCL7AJ8Z1UPRZS
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d07
+  name: Lakeside Mazda
+  address: 202 Auto Row, Seattle, WA
+  distance_mi: 42.8
+  phone: 555-0106-1006
+  email: internet.sales@lakesidemazda.example
+  website: https://lakesidemazda.example
+  persona: hardball
+  floor_price: 35310.0
+  knobs: {}
+  inventory:
+  - vin: NU7PSY721APBD8J3Y
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: J8ESM5L3N3WR1L5TP
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d08
+  name: Metro Mazda
+  address: 219 Auto Row, Seattle, WA
+  distance_mi: 41.5
+  phone: 555-0107-1007
+  email: internet.sales@metromazda.example
+  website: https://metromazda.example
+  persona: hardball
+  floor_price: 35340.0
+  knobs: {}
+  inventory:
+  - vin: J2TZKTSZCN7ETD4V6
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 2KTPS0BT8AYNHWFDV
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d09
+  name: Ridge Mazda
+  address: 236 Auto Row, Seattle, WA
+  distance_mi: 31.4
+  phone: 555-0108-1008
+  email: internet.sales@ridgemazda.example
+  website: https://ridgemazda.example
+  persona: hardball
+  floor_price: 36000.0
+  knobs: {}
+  inventory:
+  - vin: CFYMU703VUSN4APNW
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 5DD97T4K7V7G8NK0W
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d10
+  name: Coast Mazda
+  address: 253 Auto Row, Seattle, WA
+  distance_mi: 34.0
+  phone: 555-0109-1009
+  email: internet.sales@coastmazda.example
+  website: https://coastmazda.example
+  persona: hardball
+  floor_price: 35090.0
+  knobs: {}
+  inventory:
+  - vin: UNCCGBEH1UYFXFM8R
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 3R29XL89NHDKBSA7Z
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d11
+  name: Pioneer Mazda
+  address: 270 Auto Row, Seattle, WA
+  distance_mi: 19.1
+  phone: 555-0110-1010
+  email: internet.sales@pioneermazda.example
+  website: https://pioneermazda.example
+  persona: hardball
+  floor_price: 35650.0
+  knobs: {}
+  inventory:
+  - vin: 7LATJP16W6TYLSAP7
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: 815E5N2ABTWBZAJ14
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d12
+  name: Redwood Mazda
+  address: 287 Auto Row, Seattle, WA
+  distance_mi: 5.2
+  phone: 555-0111-1011
+  email: internet.sales@redwoodmazda.example
+  website: https://redwoodmazda.example
+  persona: hardball
+  floor_price: 35880.0
+  knobs: {}
+  inventory:
+  - vin: 4MFGDW2NJFH3GG0F5
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 03FPCHR92PVTDDX8Z
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d13
+  name: Crossroads Mazda
+  address: 304 Auto Row, Seattle, WA
+  distance_mi: 10.9
+  phone: 555-0112-1012
+  email: internet.sales@crossroadsmazda.example
+  website: https://crossroadsmazda.example
+  persona: hardball
+  floor_price: 35300.0
+  knobs: {}
+  inventory:
+  - vin: P4AD52PZ3TZZD1CPV
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 2CR1R6MMCKZDGTG2W
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d14
+  name: Mission Mazda
+  address: 321 Auto Row, Seattle, WA
+  distance_mi: 32.0
+  phone: 555-0113-1013
+  email: internet.sales@missionmazda.example
+  website: https://missionmazda.example
+  persona: hardball
+  floor_price: 36200.0
+  knobs: {}
+  inventory:
+  - vin: BVGA1Y1EDNA6DHMDE
+    year: 2026
+    trim: 2.5 S Premium
+    color: Gray
+    options: []
+    msrp: 37900.0
+  - vin: 2ZX54F8BZJ5PX5SP9
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+- id: d15
+  name: Northgate Mazda
+  address: 338 Auto Row, Seattle, WA
+  distance_mi: 11.8
+  phone: 555-0114-1014
+  email: internet.sales@northgatemazda.example
+  website: https://northgatemazda.example
+  persona: hardball
+  floor_price: 36180.0
+  knobs: {}
+  inventory:
+  - vin: 2401LNW497YZBJU70
+    year: 2026
+    trim: 2.5 S Premium
+    color: Red
+    options: []
+    msrp: 37900.0
+  - vin: Z4V9DH6UCK7T5ENGV
+    year: 2026
+    trim: 2.5 S Premium
+    color: White
+    options:
+    - Tech package
+    msrp: 39700.0
+  duplicate_listings: 0
+  open_hour: 9
+  close_hour: 19
+hitl:
+  approve_spec: true
+  walk_away_pct: 0.03
+  substitutes: accept_same_trim
+  pick: best
+  share_contact: true
+  approve_time: true
+  escalations: decline_and_continue
+deadlines:
+  t1_hours: 48.0
+  round_hours: 24.0
+  t2_hours: 24.0
+  max_rounds: 3
+user_availability:
+- Sat 10-14
+- Sun 11-15
+- Wed 17-19
+tags:
+- hardball
+- 15-dealers
+- accept-substitutes
+intake_answers: {}
